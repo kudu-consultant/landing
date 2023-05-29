@@ -1,0 +1,24 @@
+# Docs
+# https://github.com/evilmartians/lefthook
+
+pre-push:
+  piped: true
+  commands:
+    1_eslint:
+      run: pnpm run lint
+    2_build:
+      run: pnpm run build
+
+pre-commit:
+  piped: true
+  commands:
+    1_format:
+      run: pnpm run format
+    2_eslint:
+      run: pnpm run lint
+
+commit-msg:
+  piped: true
+  scripts:
+    message-checker:
+      runner: sh

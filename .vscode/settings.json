@@ -1,0 +1,21 @@
+{
+	"eslint.alwaysShowStatus": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": ["source.formatDocument.prettier-vscode", "source.fixAll.eslint"],
+	"editor.fontLigatures": true,
+	"explorer.compactFolders": false,
+	"tailwindCSS.includeLanguages": {
+		"html": "html",
+		"javascript": "javascript"
+	},
+	"tailwindCSS.emmetCompletions": true,
+	"editor.autoClosingBrackets": "beforeWhitespace",
+	"editor.autoClosingQuotes": "beforeWhitespace",
+	"editor.inlineSuggest.enabled": true,
+	"editor.tabSize": 2,
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	}
+}

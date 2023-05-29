@@ -1,0 +1,15 @@
+@import './styles/tailwind.css';
+@import './styles/grecaptcha.css';
+@import './styles/daisy-hero.css';
+@import './styles/daisy-input.css';
+@import './styles/daisy-button.css';
+@import './styles/daisy-link.css';
+
+@layer base {
+	[data-theme='kududesign'] {
+		@apply bg-base-300 text-white;
+	}
+	span {
+		@apply cursor-default;
+	}
+}

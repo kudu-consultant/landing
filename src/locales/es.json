@@ -1,0 +1,55 @@
+{
+	"layout": {
+		"metadata": {
+			"title": "Kudu",
+			"description": "Description"
+		},
+		"header": {
+			"navElements": {
+				"home": "Kudu",
+				"services": "Servicios",
+				"web3": "Web3",
+				"about": "Equipo"
+			},
+			"cta": "Contacto"
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
+			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+		},
+		"web3": {
+			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
+			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+		},
+		"services": {
+			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
+			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+		},
+		"about": {
+			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
+			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+		},
+		"contact": {
+			"title": "Connect",
+			"subtitle": "We look forward to hearing from you.",
+			"form": {
+				"labels": {
+					"name": "Your name",
+					"email": "Your email",
+					"subject": "Subject",
+					"message": "Message"
+				},
+				"recaptchaNode": "This site is protected by reCAPTCHA and the Google *LINK:privacy-policy*Privacy Policy*LINK* and *LINK:terms*Terms of Service.*LINK*",
+				"buttonSubmit": "Contact"
+			}
+		}
+	},
+	"emails": {
+		"contactFeedback": {
+			"subject": "[no responder]: Thanks for contacting with us",
+			"message": "Hemos recibido su correo We will get in touch as soon as possible"
+		}
+	}
+}

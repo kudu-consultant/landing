@@ -1,0 +1,59 @@
+#!/bin/bash
+#set -x
+###################################################
+# Source: https://blog.devops.dev/how-to-validate-commit-messages-c67946eb469e
+# A simple Git Hook to validate the commit message
+# Validations
+# 1. There should be a commit message !
+# 2. In dev branch, the related JIRA Issue needs to be mentioned
+# 3. In bug branch commit, the Incident Number (INC) needs to be mentioned
+# 4. In main branch, if you're making any changes , you need to have a Change request number.
+####################################################
+
+shopt -s nocasematch  # Case insensitive Cases 
+COMMIT_MSG_FILE=$1    # Recieve the commit message .git/COMMIT_EDITMSG
+# COMMIT_MSG=`head $COMMIT_MSG_FILE`
+
+# Throw error if the message is empty
+if [[ -z $(grep '[^[:space:]]' $COMMIT_MSG_FILE) ]] ; then
+
+    echo "You can't just commit without a message !!" >&2
+    exit 1
+fi
+
+MAIN_BRANCH="main"
+STAGING_BRANCH="staging"
+## Find the current branch we are in
+CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+
+## Create regex strings and error message based on the branch
+case "$CURRENT_BRANCH" in
+$MAIN_BRANCH)
+    error_msg="Write your message"
+    commit_regex_string=""
+    ;;
+$STAGING_BRANCH)
+    error_msg="Write your message"
+    commit_regex_string="*"
+    ;;
+
+## else
+\
+    *)
+    error_msg="Aborting commit. Please start commit message with $CURRENT_BRANCH."
+    commit_regex_string="(^$CURRENT_BRANCH|^Merge)"
+    ;;
+esac
+
+################################################################################
+# Sources
+# https://blog.devops.dev/how-to-validate-commit-messages-c67946eb469e
+# https://unix.stackexchange.com/questions/59893/grep-lines-starting-with-1-in-ubuntu
+# https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux
+
+## Validate the commit message adheres to the standard regex.
+# if ! [ grep -iqE $commit_regex_string "$COMMIT_MSG_FILE" ]; then
+#     echo "$error_msg" >&2
+#     echo "Exiting...." >&2
+#     exit 1
+# fi

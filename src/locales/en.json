@@ -1,0 +1,55 @@
+{
+	"layout": {
+		"metadata": {
+			"title": "Kudu",
+			"description": "Description"
+		},
+		"header": {
+			"navElements": {
+				"home": "Home",
+				"services": "Services",
+				"web3": "Web3",
+				"about": "About us"
+			},
+			"cta": "Contact us"
+		}
+	},
+	"pages": {
+		"home": {
+			"title": "Customized Solutions to Establish or Improve Your Online Presence",
+			"subtitle": "We transform your vision into a successful digital presence. From website creation to marketing strategies, we help you stand out online and achieve your business goals."
+		},
+		"web3": {
+			"title": "Customized Solutions to Establish or Improve Your Online Presence",
+			"subtitle": "We transform your vision into a successful digital presence. From website creation to marketing strategies, we help you stand out online and achieve your business goals."
+		},
+		"services": {
+			"title": "Customized Solutions to Establish or Improve Your Online Presence",
+			"subtitle": "We transform your vision into a successful digital presence. From website creation to marketing strategies, we help you stand out online and achieve your business goals."
+		},
+		"about": {
+			"title": "Customized Solutions to Establish or Improve Your Online Presence",
+			"subtitle": "We transform your vision into a successful digital presence. From website creation to marketing strategies, we help you stand out online and achieve your business goals."
+		},
+		"contact": {
+			"title": "Connect",
+			"subtitle": "We look forward to hearing from you.",
+			"form": {
+				"labels": {
+					"name": "Your name",
+					"email": "Your email",
+					"subject": "Subject",
+					"message": "Message"
+				},
+				"recaptchaNode": "This site is protected by reCAPTCHA and the Google *LINK:privacy-policy*Privacy Policy*LINK* and *LINK:terms*Terms of Service.*LINK*",
+				"buttonSubmit": "Contact"
+			}
+		}
+	},
+	"emails": {
+		"contactFeedback": {
+			"subject": "[no reply]: Thanks for contacting with us",
+			"message": "We have received your request. We will get in touch as soon as possible"
+		}
+	}
+}
