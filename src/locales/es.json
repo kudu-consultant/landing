@@ -16,40 +16,40 @@
 	},
 	"pages": {
 		"home": {
-			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
-			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+			"title": "Desbloqueando el Potencial de las Soluciones Web3",
+			"subtitle": "Transformamos tu visión en una exitosa presencia digital. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y alcanzar tus objetivos comerciales."
 		},
 		"web3": {
-			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
-			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+			"title": "Aprovecha el Poder de la Tecnología Web3",
+			"subtitle": "Transformando Empresas con Redes Descentralizadas y Confiables."
 		},
 		"services": {
-			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
-			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+			"title": "Soluciones de TI a Medida para tus Necesidades Únicas",
+			"subtitle": "Ofreciendo Servicios Web3 de Vanguardia y Desarrollo Personalizado"
 		},
 		"about": {
-			"title": "Soluciones Personalizadas para Establecer o Mejorar tu Presencia Online",
-			"subtitle": "Transformamos tu visión en una presencia digital exitosa. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y a alcanzar tus objetivos comerciales."
+			"title": "Impulsando la Transformación Digital a través de la Experiencia",
+			"subtitle": "Un equipo enfocado y apasionado de individuos Revolucionando los Servicios de TI y las Aplicaciones Web3"
 		},
 		"contact": {
 			"title": "Connect",
 			"subtitle": "We look forward to hearing from you.",
 			"form": {
 				"labels": {
-					"name": "Your name",
-					"email": "Your email",
-					"subject": "Subject",
-					"message": "Message"
+					"name": "Tu nombre",
+					"email": "Tu correo",
+					"subject": "Título",
+					"message": "Mensaje"
 				},
-				"recaptchaNode": "This site is protected by reCAPTCHA and the Google *LINK:privacy-policy*Privacy Policy*LINK* and *LINK:terms*Terms of Service.*LINK*",
-				"buttonSubmit": "Contact"
+				"recaptchaNode": "Este sitio está protegido reCAPTCHA y la *LINK:privacy-policy*Politica de privacidad*LINK* y *LINK:terms*Terminos de servicio.*LINK* de Google.",
+				"buttonSubmit": "Contacto"
 			}
 		}
 	},
 	"emails": {
 		"contactFeedback": {
-			"subject": "[no responder]: Thanks for contacting with us",
-			"message": "Hemos recibido su correo We will get in touch as soon as possible"
+			"subject": "[no responder]: Gracias por contactar con nosotros.",
+			"message": "Hemos recibido su correo, pronto nos pondremos en contacto."
 		}
 	}
 }
