@@ -83,7 +83,7 @@ When you run this development server, the changes you make in your frontend will
 | NAME       | URL                            | BRANCH  | VERCEL ENV | VERSION |
 | ---------- | ------------------------------ | ------- | ---------- | ------- |
 | PRODUCTION | https://www.kudu.design        | main    | Production | 0.0.0   |
-| PREVIEW    | https://kudu-design.vercel.app | staging | Preview    | 0.0.0   |
+| PREVIEW    | https://kudu-design.vercel.app | develop | Preview    | 0.0.0   |
 | LOCALHOST  | http://localhost:5173          | NA      | NA         | NA      |
 
 ### Production
