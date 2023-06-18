@@ -7,7 +7,7 @@
 
 @layer base {
 	[data-theme='kududesign'] {
-		@apply bg-base-300 text-white;
+		@apply bg-base-300 text-base-content;
 	}
 	span {
 		@apply cursor-default;
