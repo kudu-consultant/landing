@@ -41,7 +41,7 @@
 	},
 	"dependencies": {
 		"@sentry/sveltekit": "7.55.2",
-		"daisyui": "3.0.0",
+		"daisyui": "3.1.1",
 		"nodemailer": "6.9.3",
 		"svelte-email": "0.0.4",
 		"svelte-icons": "2.1.0"
