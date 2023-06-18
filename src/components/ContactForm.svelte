@@ -40,24 +40,24 @@
 
 	let formElement: HTMLFormElement | undefined
 
-	let userStep: null | 'submiting' | 'success' | 'error' = null
+	let userStep: null | 'submiting' | 'success' | 'error' | 'validation' = null
 
 	$: form = {
 		name: {
 			value: (formElement?.name as any)?.value ?? '',
-			error: false
+			error: userStep === 'validation' ? !validators.isStringValid(form.name.value) : false
 		},
 		email: {
 			value: formElement?.email?.value ?? '',
-			error: false
+			error: userStep === 'validation' ? !validators.isEmailValid(form.email.value) : false
 		},
 		subject: {
 			value: formElement?.subject.value ?? '',
-			error: false
+			error: userStep === 'validation' ? !validators.isStringValid(form.subject.value) : false
 		},
 		message: {
 			value: formElement?.message?.value ?? '',
-			error: false
+			error: userStep === 'validation' ? !validators.isStringValid(form.message.value) : false
 		}
 	}
 
@@ -69,7 +69,8 @@
 		form.subject.error = !validators.isStringValid(form.subject.value)
 		form.message.error = !validators.isStringValid(form.message.value)
 
-		if (Object.keys(form).some(e => form[e as keyof typeof form].error)) return (userStep = null)
+		if (Object.keys(form).some(e => form[e as keyof typeof form].error))
+			return (userStep = 'validation')
 		;(window as any).grecaptcha.ready(async () => {
 			try {
 				const token = await (window as any).grecaptcha.execute(env.PUBLIC_RECAPTCHA_SITE_KEY, {
@@ -101,7 +102,7 @@
 	}
 
 	const classes = {
-		label: 'text-black text-xs block mb-2',
+		label: 'text-base-300 text-xs block mb-2',
 		input: 'input input-bordered mb-2 w-full',
 		link: 'link link-primary'
 	}
@@ -113,7 +114,7 @@
 	class={`relative overflow-hidden rounded-2xl bg-white ${extraclass}`}
 >
 	{#if userStep === 'success' || userStep === 'error'}
-		<div class="absolute z-50 grid h-full w-full place-content-center bg-white p-6">
+		<div class="absolute z-50 grid h-full w-full place-content-center bg-base-100 p-6">
 			<div class="w-[448px] max-w-md text-center">
 				<div
 					class="mx-auto my-4 h-24 w-24"
@@ -126,7 +127,7 @@
 						<FaTimesCircle />
 					{/if}
 				</div>
-				<span class="text-base text-black">
+				<span class="text-base text-base-300">
 					{#if userStep === 'success'}
 						Your submit is successfull
 					{:else}
@@ -152,7 +153,7 @@
 		>
 		<input
 			bind:value={form.name.value}
-			disabled={userStep !== null}
+			disabled={!(userStep === null || userStep === 'validation')}
 			type="text"
 			id="name"
 			name="name"
@@ -164,7 +165,7 @@
 		>
 		<input
 			bind:value={form.email.value}
-			disabled={userStep !== null}
+			disabled={!(userStep === null || userStep === 'validation')}
 			type="text"
 			id="email"
 			name="email"
@@ -176,7 +177,7 @@
 		>
 		<input
 			bind:value={form.subject.value}
-			disabled={userStep !== null}
+			disabled={!(userStep === null || userStep === 'validation')}
 			type="text"
 			id="subject"
 			name="subject"
@@ -188,14 +189,14 @@
 		>
 		<textarea
 			bind:value={form.message.value}
-			disabled={userStep !== null}
+			disabled={!(userStep === null || userStep === 'validation')}
 			id="message"
 			name="message"
 			rows="2"
 			class={`page-input !mb-0 !h-full resize-none py-3 ${classes.input}`}
 			class:input-error={form.message.error}
 		/>
-		<span class="mt-4 block text-xs text-black">
+		<span class="mt-4 block text-xs text-base-300">
 			{@html locales.recaptchaNode
 				.replace(
 					'*LINK:privacy-policy*',
@@ -220,8 +221,8 @@
 		</span>
 		<button
 			type="submit"
-			class="btn-primary btn-block btn mt-4 !rounded-2xl"
-			disabled={userStep !== null}>{locales.buttonSubmit}</button
+			class="btn-primary btn-block btn mt-4 !rounded-lg"
+			disabled={!(userStep === null || userStep === 'validation')}>{locales.buttonSubmit}</button
 		>
 	</div>
 </form>

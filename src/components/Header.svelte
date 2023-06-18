@@ -46,7 +46,7 @@
 		{#key showMenu}
 			<ul
 				class="grid w-fit md:grid-cols-[max-content,max-content,max-content,max-content] md:px-4 md:grid max-md:absolute
-		max-md:bg-black max-md:translate-y-16 max-md:w-full max-md:xs:-ml-6 max-md:-ml-4 max-md:z-50 max-md:h-[calc(100%-64px)]
+		max-md:bg-base-300 max-md:translate-y-16 max-md:w-full max-md:xs:-ml-6 max-md:-ml-4 max-md:z-50 max-md:h-[calc(100%-64px)]
 		max-md:grid-rows-[max-content,max-content,max-content,max-content]"
 				class:max-md:hidden={!showMenu}
 				transition:fly={{ duration: 300 }}
@@ -54,8 +54,9 @@
 				{#each [['/', locales.navElements.home], ['/services', locales.navElements.services], ['/web3', locales.navElements.web3], ['/about', locales.navElements.about]] as element}
 					<a
 						href={routePrefixLang + element[0]}
-						class="btn-link btn h-fit w-fit self-center duration-300 max-md:btn-block"
+						class="btn-link btn h-fit w-fit self-center duration-300 max-md:btn-block !no-underline"
 						class:md:translate-y-1={segment === element[0]}
+						class:md:!text-base-200={segment === element[0]}
 						class:max-md:!text-primary={segment === element[0]}
 					>
 						<li>{element[1]}</li>

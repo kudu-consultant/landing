@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,6 +11,9 @@ export default {
 			xs: { min: '475px' },
 			...defaultTheme.screens,
 			'max-md': { max: '767px' }
+		},
+		fontFamily: {
+			HindSiliguri: ['Hind Siliguri', ...fontFamily.sans]
 		},
 		extend: {
 			containers: {
@@ -28,27 +32,27 @@ export default {
 		themes: [
 			{
 				kududesign: {
-					primary: '#D8304E',
-					'primary-focus': '#A8304E',
-					'primary-content': '#ffffff',
+					primary: '#E1296C',
+					'primary-focus': '#D31B5D',
+					'primary-content': '#F8F8F8',
 					secondary: '#000',
 					'secondary-focus': '#000',
 					'secondary-content': '#000',
 					neutral: '#000',
 					'neutral-focus': '#000',
 					'neutral-content': '#000',
-					'base-100': '#fff',
+					'base-100': '#F8F8F8',
 					'base-200': '#D6D6D6',
-					'base-300': '#000',
-					'base-content': '#A2A2A2',
-					info: '#000',
-					'info-content': '#000',
-					success: '#37D39A',
-					'success-content': '#000',
+					'base-300': '#24252B',
+					'base-content': '#F8F8F8',
+					info: '#1DA1F2',
+					'info-content': '#F8F8F8',
+					success: '#1ECDBC',
+					'success-content': '#F8F8F8',
 					warning: '#000',
-					'warning-content': '#000',
+					'warning-content': '#F8F8F8',
 					error: '#F87272',
-					'error-content': '#000',
+					'error-content': '#F8F8F8',
 					'--rounded-btn': '99999px',
 					'--border-btn': '1px',
 					'--btn-focus-scale': '',
@@ -66,6 +70,9 @@ export default {
 		prefix: ''
 	},
 	plugins: [
+		function ({ addVariant }) {
+			addVariant('child', '& > *')
+		},
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/container-queries'),
 		require('@tailwindcss/aspect-ratio'),
