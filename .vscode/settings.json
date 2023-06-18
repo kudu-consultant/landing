@@ -17,5 +17,6 @@
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"[svelte]": {
 		"editor.defaultFormatter": "svelte.svelte-vscode"
-	}
+	},
+	"editor.linkedEditing": true
 }

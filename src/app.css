@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 @import './styles/tailwind.css';
 @import './styles/grecaptcha.css';
 @import './styles/daisy-hero.css';
@@ -7,7 +8,7 @@
 
 @layer base {
 	[data-theme='kududesign'] {
-		@apply bg-base-300 text-white;
+		@apply bg-base-300 text-base-content font-HindSiliguri;
 	}
 	span {
 		@apply cursor-default;

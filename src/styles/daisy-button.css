@@ -1,6 +1,6 @@
 @layer components {
 	[data-theme='kududesign'] .btn.btn-link {
-		@apply underline-offset-4 hover:text-base-content text-white;
+		@apply underline-offset-4 hover:text-base-200 text-base-content;
 	}
 	[data-theme='kududesign'] .btn.btn-square {
 		@apply rounded-[0.25rem];
@@ -10,7 +10,7 @@
 	}
 	[data-theme='kududesign'] .btn[disabled],
 	[data-theme='kududesign'] .btn-disabled {
-		@apply rounded-[0.5rem] border-base-content border-opacity-100 border-opacity-100 bg-base-200
-    bg-opacity-100 text-base-content text-black;
+		@apply rounded-[0.5rem] border-base-300 border-opacity-100 border-opacity-100 bg-base-200
+    bg-opacity-100 text-base-300;
 	}
 }

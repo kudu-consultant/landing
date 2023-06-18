@@ -1,11 +1,11 @@
 @layer components {
 	[data-theme='kududesign'] .input:not(.input.input-error) {
-		@apply rounded-[0.5rem] border-base-content border-opacity-100 text-black;
+		@apply rounded-[0.5rem] border-base-200 border-opacity-100 text-base-300 bg-transparent;
 	}
 	[data-theme='kududesign'] .input:focus:not(.input.input-error) {
-		@apply rounded-[0.5rem] border-base-content border-opacity-100 text-black outline-base-content;
+		@apply rounded-[0.5rem] border-base-200 border-opacity-100 outline-base-200;
 	}
 	[data-theme='kududesign'] .input.input-error {
-		@apply rounded-[0.5rem] text-black;
+		@apply rounded-[0.5rem] text-base-300 bg-transparent;
 	}
 }
