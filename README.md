@@ -247,6 +247,6 @@ about Lefthook here: [Lefthook Github][lefthook-github]
 [daisy-docs]: https://daisyui.com/docs/use/
 [sveltekit-deploy-to-vercel]: https://sveltekit-deploy-to-vercel.vercel.app/
 [renovate-tutorial]: https://github.com/renovatebot/tutorial
-[renovate-dashboard]: https://app.renovatebot.com/dashboard#github/Audicity/radxu-corporate
+[renovate-dashboard]: https://developer.mend.io/github/kudu-consultant/landing
 [renovate-docs]: https://docs.renovatebot.com/
 [lefthook-github]: https://github.com/evilmartians/lefthook
