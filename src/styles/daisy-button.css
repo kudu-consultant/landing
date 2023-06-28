@@ -1,12 +1,31 @@
 @layer components {
+	[data-theme='kududesign'] .btn.btn-primary {
+		@apply active:opacity-90;
+	}
+	[data-theme='kududesign'] .btn.btn-neutral {
+		@apply active:opacity-80;
+	}
+	[data-theme='kududesign'] .btn.btn-neutral.btn-outline {
+		@apply hover:text-base-300;
+	}
 	[data-theme='kududesign'] .btn.btn-link {
 		@apply underline-offset-4 hover:text-base-200 text-base-content;
 	}
-	[data-theme='kududesign'] .btn.btn-square {
-		@apply rounded-[0.25rem];
+	[data-theme='kududesign'] .btn.btn-sm {
+		@apply h-9;
 	}
-	[data-theme='kududesign'] .btn.btn-square {
-		@apply rounded-[0.25rem] h-10 w-10;
+	[data-theme='kududesign'] .btn.btn-square:not(.btn-sm),
+	[data-theme='kududesign']
+		.btn.btn-square:not(.btn-xs)
+		[data-theme='kududesign']
+		.btn.btn-square.btn-md {
+		@apply rounded-[0.25rem] h-12 w-12;
+	}
+	[data-theme='kududesign'] .btn.btn-square.btn-sm {
+		@apply rounded-[0.25rem] h-9 w-9;
+	}
+	[data-theme='kududesign'] .btn.btn-square.btn-xs {
+		@apply rounded-[0.25rem] h-6 w-6;
 	}
 	[data-theme='kududesign'] .btn[disabled],
 	[data-theme='kududesign'] .btn-disabled {

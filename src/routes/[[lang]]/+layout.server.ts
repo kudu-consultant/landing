@@ -32,6 +32,12 @@ export const load: LayoutServerLoad = async ({ cookies, params, url }) => {
 			}
 			cta: string
 		}
+		footer: {
+			announcement: {
+				title: string
+				cta: string
+			}
+		}
 	} = (await import(`../../locales/${params.lang ?? DEFAULT_LANGUAGE}.json`)).default.layout
 	return {
 		locales

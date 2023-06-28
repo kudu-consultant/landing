@@ -14,4 +14,4 @@
 
 <Header locales={locales.header} />
 <slot />
-<Footer />
+<Footer locales={locales.footer} />
