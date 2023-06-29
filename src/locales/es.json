@@ -12,6 +12,12 @@
 				"about": "Equipo"
 			},
 			"cta": "Contacto"
+		},
+		"footer": {
+			"announcement": {
+				"title": "fooo fooo fooo fooooo fooo.",
+				"cta": "foo foo fooo"
+			}
 		}
 	},
 	"pages": {

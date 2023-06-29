@@ -1,12 +1,19 @@
 <script lang="ts">
 	import { Discord, Github, Twitter, Linkedin } from 'svelte-bootstrap-icons'
+
+	export let locales: {
+		announcement: {
+			title: string
+			cta: string
+		}
+	}
 </script>
 
-<footer class="absolute bottom-0 left-0 w-full text-center">
+<footer>
 	<div class="bg-primary py-8 flex flex-col gap-4">
 		<p class="mtext-s text-base-100 font-bold">We're building the future.</p>
 		<a
-			class="text-x s btn-primary border-white md:btn-md btn-sm btn w-fit place-self-end self-center min-w-max text-base-100"
+			class="text-xs btn-primary border-white md:btn-md btn-sm btn w-fit place-self-end self-center min-w-max text-base-100"
 			href="/">Let's build together</a
 		>
 	</div>
@@ -67,7 +74,7 @@
 				<select
 					class="bg-base-300 rounded-xl border-white border p-1 text-xs ml-2 flex justify-center"
 				>
-					<option class="text-xs" value="englis">Englis</option>
+					<option class="text-xs" value="englis">English</option>
 					<option class="text-xs" value="spanish">Spanish</option>
 				</select>
 			</div>

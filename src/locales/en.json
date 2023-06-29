@@ -12,6 +12,20 @@
 				"about": "About us"
 			},
 			"cta": "Contact us"
+		},
+		"footer": {
+			"announcement": {
+				"title": "We're building the future.",
+				"cta": "Let's build together"
+			},
+			"navigation": {
+				"elements": [
+					{
+						"title": "Company",
+						"links": ["Home", "Capabilies", "Web 3", "About us"]
+					}
+				]
+			}
 		}
 	},
 	"pages": {
