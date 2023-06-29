@@ -6,7 +6,7 @@
 	<div class="bg-primary py-8 flex flex-col gap-4">
 		<p class="mtext-s text-base-100 font-bold">We're building the future.</p>
 		<a
-			class="text-xs btn-primary border-white md:btn-md btn-sm btn w-fit place-self-end self-center min-w-max text-base-100"
+			class="text-x s btn-primary border-white md:btn-md btn-sm btn w-fit place-self-end self-center min-w-max text-base-100"
 			href="/">Let's build together</a
 		>
 	</div>
