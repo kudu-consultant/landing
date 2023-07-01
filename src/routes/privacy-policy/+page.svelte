@@ -1,6 +1,6 @@
 <section class="md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24">
 	<div class="prose mx-auto">
-		<h1>Privacy Policy for Kudu Consultant LLC</h1>
+		<h1>Privacy Policy</h1>
 		<p>
 			At kudu.design, accessible from https://www.kudu.design/, one of our main priorities is the
 			privacy of our visitors. This Privacy Policy document contains types of information that is
@@ -61,9 +61,22 @@
 		<h2>Cookies and Web Beacons</h2>
 		<p>
 			Like any other website, kudu.design uses "cookies". These cookies are used to store
-			information including visitors' preferences, and the pages on the website that the visitor
-			accessed or visited. The information is used to optimize the users' experience by customizing
-			our web page content based on visitors' browser type and/or other information.
+			information, including visitors' preferences and the pages of the website that the visitor
+			accessed or visited. This information is used to optimize the user experience by personalizing
+			the content of our website based on visitors' browser type and other relevant information.
+			Some cookies collect information that is shared with third parties in order to provide the
+			kudu.design page free of charge.
+		</p>
+		<p>
+			We strive to ensure that the collection and use of cookies comply with applicable privacy laws
+			and regulations. You can adjust your cookie settings or opt-out of certain cookies by
+			accessing the settings in your browser. However, please note that disabling certain cookies
+			may impact the functionality and user experience of our website.
+		</p>
+		<p>
+			If you have any concerns or questions about our use of cookies, please feel free to contact
+			us. We value your privacy and are committed to providing you with a transparent and
+			satisfactory browsing experience on kudu.design.
 		</p>
 		<h2>Advertising Partners Privacy Policies</h2>
 		<p>
@@ -83,12 +96,6 @@
 			third-party advertisers.
 		</p>
 		<h2>Third Party Privacy Policies</h2>
-		<p>
-			kudu.design's Privacy Policy does not apply to other advertisers or websites. Thus, we are
-			advising you to consult the respective Privacy Policies of these third-party ad servers for
-			more detailed information. It may include their practices and instructions about how to
-			opt-out of certain options.
-		</p>
 		<p>
 			You can choose to disable cookies through your individual browser options. To know more
 			detailed information about cookie management with specific web browsers, it can be found at
