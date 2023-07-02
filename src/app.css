@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-@import './styles/tailwind.css';
-@import './styles/grecaptcha.css';
-@import './styles/daisy-hero.css';
-@import './styles/daisy-input.css';
-@import './styles/daisy-button.css';
-@import './styles/daisy-link.css';
+@import 'kudu-ui-system/src/styles/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
-	[data-theme='kududesign'] {
+	html,
+	body {
 		@apply bg-base-300 text-base-content font-HindSiliguri;
 	}
-	span {
-		@apply cursor-default;
-	}
+}
+
+.grecaptcha-badge {
+	visibility: hidden;
 }

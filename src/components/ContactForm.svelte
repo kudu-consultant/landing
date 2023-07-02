@@ -221,7 +221,7 @@
 		</span>
 		<button
 			type="submit"
-			class="btn-primary btn-block btn mt-4 !rounded-lg"
+			class="btn-primary btn-block btn mt-4"
 			disabled={!(userStep === null || userStep === 'validation')}>{locales.buttonSubmit}</button
 		>
 	</div>
