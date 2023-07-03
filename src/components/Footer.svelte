@@ -10,16 +10,16 @@
 </script>
 
 <footer>
-	<div class="bg-primary xs:py-16 py-4 xs:px-16 px-7 text-center">
-		<span class="text-base-100 font-bold text-2xl block text-center"
+	<div class="bg-primary md:p-16 py-8 px-6 text-center">
+		<span class="text-base-100 font-bold md:text-2xl text-xl block text-center"
 			>{locales.announcement.title}
 		</span>
-		<a class="btn btn-neutral btn-outline xs:mt-8 mt-4" href="/contact"
+		<a class="btn btn-neutral btn-outline max-md:btn-sm md:mt-8 mt-5" href="/contact"
 			>{locales.announcement.cta}
 		</a>
 	</div>
-	<div class="bg-base-300 p-16 pb-8">
-		<div class="flex justify-start mr-72">
+	<div class="bg-base-300 md:p-16 px-6 pt-9 pb-6 md:pb-8">
+		<!-- <div class="flex justify-start mr-72">
 			<div class="flex flex-col justify-center">
 				<img src="../images/logo.png" alt="" class="aspect-1/1 w-16" />
 			</div>
@@ -55,16 +55,38 @@
 				<a class="text-base-200 text-xs" href="/">Wallet Kudu</a>
 				<a class="text-base-200 text-xs" href="/">Second Hand</a>
 			</div>
-		</div>
-		<div class="border border-base-200 my-2" />
-		<div class="flex justify-center center;">
-			<a href="/" class="w-12 h-12 px-3 block"> <Twitter class="w-full h-full" /></a>
-			<a href="/" class="w-12 h-12 px-3 block"> <Github class="w-full h-full" /></a>
-			<a href="/" class="w-12 h-12 px-3 block"> <Linkedin class="w-full h-full" /></a>
-			<a href="/" class="w-12 h-12 px-3 block"> <Discord class="w-full h-full" /> </a>
-		</div>
-		<div class="border border-base-200 mb-4 mt-2" />
-		<div class="flex justify-between items-center pb-4">
+		</div> -->
+		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
+		<ul class="flex justify-center md:py-8 py-4 space-x-4">
+			<!-- <li>
+				<a href="/" target="_blank" rel="noopener noreferrer" class="btn btn-square btn-ghost"
+					><Twitter class="w-7 h-7" /></a
+				>
+			</li> -->
+			<li>
+				<a
+					href="https://github.com/kudu-consultant"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-square btn-ghost"><Github class="w-7 h-7" /></a
+				>
+			</li>
+			<li>
+				<a
+					href="https://www.linkedin.com/company/kudu-consultant-llc"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-square btn-ghost"><Linkedin class="w-7 h-7" /></a
+				>
+			</li>
+			<!-- <li>
+				<a href="/" target="_blank" rel="noopener noreferrer" class="btn btn-square btn-ghost"
+					><Discord class="w-7 h-7" /></a
+				>
+			</li> -->
+		</ul>
+		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
+		<!-- <div class="flex justify-between items-center pb-4">
 			<p class="mx-12 text-xs">Copyright © 2023, Kudu Consultant LLC</p>
 			<div class="mx-12 flex align-middle items-center">
 				<a class=" px-1 text-xs text-primary-content" href="/">Cookie Management</a>
@@ -79,6 +101,6 @@
 					<option class="text-xs" value="spanish">Spanish</option>
 				</select>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </footer>

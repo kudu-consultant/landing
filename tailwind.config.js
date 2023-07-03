@@ -10,7 +10,8 @@ export default {
 		screens: {
 			xs: { min: '475px' },
 			...defaultTheme.screens,
-			'max-md': { max: '768px' }
+			'max-md': { max: '768px' },
+			'max-xs': { max: '475px' }
 		},
 		fontFamily: {
 			HindSiliguri: ['Hind Siliguri', ...fontFamily.sans]
@@ -58,7 +59,8 @@ export default {
 					'--btn-focus-scale': '',
 					'--animation-btn': '',
 					'--btn-text-case': '',
-					'--animation-input': '0.3s'
+					'--animation-input': '0.3s',
+					'--tw-bg-opacity': '0.2'
 				}
 			}
 		],
