@@ -23,6 +23,27 @@
 					{
 						"title": "Company",
 						"links": ["Home", "Capabilies", "Web 3", "About us"]
+					},
+					{
+						"title": "Services",
+						"links": [
+							"UX/UI design",
+							"Web development",
+							"Mobile development",
+							"Technical consulting",
+							"Custom corporate web",
+							"Tracker integrations",
+							"Web3 adoption consulting",
+							"Web3 tools integrations",
+							"Web3 protocol development",
+							"Smart contracts development",
+							"NFT solutions",
+							"Web3 audits"
+						]
+					},
+					{
+						"title": "Products",
+						"links": ["Kudu Pay", "Wallet Kudu", "Second Hand"]
 					}
 				]
 			}

@@ -10,7 +10,7 @@ export default {
 		screens: {
 			xs: { min: '475px' },
 			...defaultTheme.screens,
-			'max-md': { max: '767px' }
+			'max-md': { max: '768px' }
 		},
 		fontFamily: {
 			HindSiliguri: ['Hind Siliguri', ...fontFamily.sans]

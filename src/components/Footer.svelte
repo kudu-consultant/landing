@@ -10,18 +10,20 @@
 </script>
 
 <footer>
-	<div class="bg-primary p-16 text-center">
-		<span class="text-base-100 font-bold text-2xl block text-center mb-8"
+	<div class="bg-primary xs:py-16 py-4 xs:px-16 px-7 text-center">
+		<span class="text-base-100 font-bold text-2xl block text-center"
 			>{locales.announcement.title}
 		</span>
-		<a class="btn btn-neutral btn-outline" href="/contact">{locales.announcement.cta} </a>
+		<a class="btn btn-neutral btn-outline xs:mt-8 mt-4" href="/contact"
+			>{locales.announcement.cta}
+		</a>
 	</div>
-	<div class="bg-base-300 flex flex-col">
-		<div class="flex justify-start gap-16 py-8 ml-14">
+	<div class="bg-base-300 p-16 pb-8">
+		<div class="flex justify-start mr-72">
 			<div class="flex flex-col justify-center">
 				<img src="../images/logo.png" alt="" class="aspect-1/1 w-16" />
 			</div>
-			<div class="flex flex-col gap-4 items-start">
+			<div class="flex flex-col gap-4 items-start mx-24">
 				<p class="text-sm text-primary-content">Company</p>
 				<a class="text-base-200 text-xs" href="/">Home</a>
 				<a class="text-base-200 text-xs" href="/">Capabilies</a>
@@ -54,14 +56,14 @@
 				<a class="text-base-200 text-xs" href="/">Second Hand</a>
 			</div>
 		</div>
-		<div class="border border-base-200 mx-12 my-2" />
+		<div class="border border-base-200 my-2" />
 		<div class="flex justify-center center;">
 			<a href="/" class="w-12 h-12 px-3 block"> <Twitter class="w-full h-full" /></a>
 			<a href="/" class="w-12 h-12 px-3 block"> <Github class="w-full h-full" /></a>
 			<a href="/" class="w-12 h-12 px-3 block"> <Linkedin class="w-full h-full" /></a>
 			<a href="/" class="w-12 h-12 px-3 block"> <Discord class="w-full h-full" /> </a>
 		</div>
-		<div class="border border-base-200 mx-12 mb-4 mt-2" />
+		<div class="border border-base-200 mb-4 mt-2" />
 		<div class="flex justify-between items-center pb-4">
 			<p class="mx-12 text-xs">Copyright © 2023, Kudu Consultant LLC</p>
 			<div class="mx-12 flex align-middle items-center">
