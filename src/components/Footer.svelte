@@ -6,6 +6,39 @@
 			title: string
 			cta: string
 		}
+		navigation: {
+			elements: [
+				{
+					title: string
+					link: [string, string, string, string]
+				},
+				{
+					title: string
+					links: [
+						string,
+						string,
+						string,
+						string,
+						string,
+						string,
+						string,
+						string,
+						string,
+						string,
+						string,
+						string
+					]
+				},
+				{
+					title: string
+					links: [string, string, string, string]
+				}
+			]
+		}
+		licenses: {
+			links: [string, string, string, string, string]
+			button: [string, string]
+		}
 	}
 </script>
 

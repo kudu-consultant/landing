@@ -36,12 +36,47 @@ export const load: LayoutServerLoad = async ({ cookies, params, url }) => {
 			announcement: {
 				title: string
 				cta: string
+			},
+			navigation: {
+				elements: [
+					{
+						title: string,
+						link: [string, string, string, string]
+					},
+					{
+						title: string,
+						links: [
+							string,
+							string,
+							string,
+							string,
+							string,
+							string,
+							string,
+							string,
+							string,
+							string,
+							string,
+							string
+						]
+					},
+					{
+						title: string,
+						links: [string, string, string, string]
+					}
+				]
+			},
+			licenses: {
+				links: [string, string, string, string, string]
+				button: [string, string]
 			}
 		}
+
 	} = (await import(`../../locales/${params.lang ?? DEFAULT_LANGUAGE}.json`)).default.layout
 	return {
 		locales
 	}
 }
+
 
 export const prerender = false

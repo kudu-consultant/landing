@@ -46,6 +46,11 @@
 						"links": ["Kudu Pay", "Wallet Kudu", "Second Hand"]
 					}
 				]
+			},
+			"licenses":
+			{
+				"links": ["Copyright © 2023, Kudu Consultant LLC", "Cookie Management", "Privacy Policy", "Terms of Use"],
+			  "button": ["English", "Spanish"]
 			}
 		}
 	},
