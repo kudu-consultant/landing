@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Discord, Github, Twitter, Linkedin } from 'svelte-bootstrap-icons'
+	import { Github, Linkedin } from 'svelte-bootstrap-icons'
 	import { Link } from 'svelte-email'
 
 	export let locales: {
@@ -36,10 +36,11 @@
 				}
 			]
 		}
-		licenses: {
-			links: [string, string, string, string, string]
-			button: [string, string]
-		}
+		copyright: string
+		privacyPolicy: string
+		terms: string
+		buttonCookiesManagment: string
+		langs: string[]
 	}
 </script>
 
@@ -48,7 +49,7 @@
 		<span class="text-base-100 font-bold md:text-2xl text-xl block text-center"
 			>{locales.announcement.title}
 		</span>
-		<a class="btn btn-neutral btn-outline max-md:btn-sm md:mt-8 mt-5" href="/contact"
+		<a class="btn btn-neutral btn-outline max-md:btn-sm md:mt-8 mt-5 rounded-full" href="/contact"
 			>{locales.announcement.cta}
 		</a>
 	</div>
@@ -95,7 +96,7 @@
 			</div>
 		</div>
 		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
-		<ul class="flex justify-center md:py-8 py-4 space-x-4">
+		<ul class="flex justify-center md:py-8 py-4 space-x-4 sh">
 			<!-- <li>
 				<a href="/" target="_blank" rel="noopener noreferrer" class="btn btn-square btn-ghost"
 					><Twitter class="w-7 h-7" /></a
@@ -124,25 +125,37 @@
 			</li> -->
 		</ul>
 		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
-		<div
-			class="flex md:justify-between md:items-center md:pt-8 max-md:flex-col-reverse max-md:mt-8 max-md:justify-start"
-		>
-			<p class="max-md:mt-8 text-sm">{locales.licenses.links[0]}</p>
-			<div class="flex align-middle md:items-center max-md:flex-col-reverse">
-				<a class="px-1 text-sm text-primary-content" href="/">{locales.licenses.links[1]}</a>
-				<div class="md:h-3 h-0 border-l border-white" />
-				<a class="px-1 text-sm text-primary-content max-md:my-4" href="/"
-					>{locales.licenses.links[2]}</a
-				>
-				<div class="md:h-3 h-0 border-l border-white" />
-				<a class="px-1 text-sm text-primary-content" href="/">{locales.licenses.links[3]}</a>
-				<select
-					class="bg-base-300 rounded-xl border-white border p-1 text-sm flex justify-center md:ml-8 max-md:mb-8 max-md: w-20"
-				>
-					<option class="text-sm" value="englis">{locales.licenses.button[0]}</option>
-					<option class="text-sm" value="spanish">{locales.licenses.button[0]}</option>
-				</select>
-			</div>
+		<div class="flex items-center mt-8 space-x-8">
+			<address class="max-md:mt-8 text-sm not-italic mr-auto">{locales.copyright}</address>
+			<ul class="flex shrink-0 md:items-center max-md:flex-col-reverse space-x-1">
+				<li>
+					<button class="px-1 text-sm text-primary-content">{locales.buttonCookiesManagment}</button
+					>
+				</li>
+				<div>|</div>
+				<li>
+					<a
+						class="px-1 text-sm text-primary-content max-md:my-4"
+						target="_blank"
+						rel="bookmark"
+						href="/terms-of-use">{locales.terms}</a
+					>
+				</li>
+				<div>|</div>
+				<li>
+					<a
+						class="px-1 text-sm text-primary-content"
+						target="_blank"
+						rel="bookmark"
+						href="/privacy-policy">{locales.privacyPolicy}</a
+					>
+				</li>
+			</ul>
+			<select class="select select-bordered select-sm !rounded-full">
+				{#each locales.langs as lang}
+					<option>{lang}</option>
+				{/each}
+			</select>
 		</div>
 	</div>
 </footer>

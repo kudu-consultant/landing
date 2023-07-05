@@ -38,7 +38,7 @@ export default {
 					'primary-content': '#F8F8F8',
 					secondary: '#000',
 					'secondary-focus': '#000',
-					'secondary-content': '#000',
+					'secondary-content': '#F8F8F8',
 					neutral: '#F8F8F8',
 					'neutral-focus': '#D6D6D6',
 					'neutral-content': '#24252B',
@@ -54,13 +54,12 @@ export default {
 					'warning-content': '#F8F8F8',
 					error: '#F87272',
 					'error-content': '#F8F8F8',
-					'--rounded-btn': '99999px',
+					'--rounded-btn': '0.5rem',
 					'--border-btn': '1px',
 					'--btn-focus-scale': '',
 					'--animation-btn': '',
 					'--btn-text-case': '',
-					'--animation-input': '0.3s',
-					'--tw-bg-opacity': '0.2'
+					'--animation-input': '0.3s'
 				}
 			}
 		],

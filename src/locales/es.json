@@ -15,8 +15,8 @@
 		},
 		"footer": {
 			"announcement": {
-				"title": "Contruimos el futuro",
-				"cta": "Vamos a contruirlo juntos"
+				"title": "We're building the future.",
+				"cta": "Let's build together"
 			},
 			"navigation": {
 				"elements": [
@@ -43,15 +43,15 @@
 					},
 					{
 						"title": "Products",
-						"links": ["Kudu Pay", "Wallet Kudu", "Second Hand"]
+						"links": ["KuduPay", "Wallet Kudu"]
 					}
 				]
 			},
-			"licenses":
-			{
-				"links": ["Copyright © 2023, Kudu Consultant LLC", "Cookie Management", "Privacy Policy", "Terms of Use"],
-			  "button": ["English", "Spanish"]
-			}
+			"copyright": "Copyright © 2023, Kudu Consultant LLC",
+			"privacyPolicy": "Privacy Policy",
+			"terms": "Terms of Use",
+			"buttonCookiesManagment": "Cookie Management",
+			"langs": ["English", "Spanish"]
 		}
 	},
 	"pages": {

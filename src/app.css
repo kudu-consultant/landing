@@ -5,6 +5,7 @@
 @import './styles/daisy-input.css';
 @import './styles/daisy-button.css';
 @import './styles/daisy-link.css';
+@import './styles/daisy-select.css';
 
 @layer base {
 	[data-theme='kududesign'] {
