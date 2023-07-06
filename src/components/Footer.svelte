@@ -150,7 +150,7 @@
 					>
 				</li>
 			</ul>
-			<select class="select select-bordered select-sm !rounded-full">
+			<select class="select select-reverse select-bordered select-sm !rounded-full">
 				{#each locales.langs as lang}
 					<option>{lang}</option>
 				{/each}

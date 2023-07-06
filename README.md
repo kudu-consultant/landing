@@ -158,7 +158,6 @@ When you run this development server, the changes you make in your frontend will
 | `src`                | All sources files, the core of the project                         |
 | `src/app.html`       | Main file of project structure                                     |
 | `src/app.css`        | Main CSS file                                                      |
-| `src/styles`         | Folder containing all CSS styles                                   |
 | `src/constants.ts`   | Add docs                                                           |
 | `src/app.d.ts`       | Define custom types and interfaces for entry app                   |
 | `src/routes`         | All pages of the project, use as router folder system              |
@@ -171,13 +170,17 @@ When you run this development server, the changes you make in your frontend will
 
 ## Styling Framework
 
-This project utilizes Tailwind CSS and Daisy UI for styling the components. Tailwind CSS enables
-you to write CSS more efficiently and maintain a structured approach. Daisy UI is a CSS class
-library that provides styles for commonly used components. For more details, you can refer to
-the documentation of [Tailwind CSS][tailwind-docs] and [Daisy UI][daisy-docs].
+This project uses the `kudu-ui-system` package based on Tailwind CSS and Daisy UI to style
+the components.
 
-- For customize Tailwind and theming styles go to `tailwind.config.js` file.
-- To customize Daisy UI components or create your own, navigate go to `src/styles` folder.
+If you want to open a style enhancement proposal for all applications using the
+`kudu-ui-system` package, please go to the [kudu-ui-system repository][kudu-ui-system-repository].
+
+Tailwind CSS allows for more efficient CSS writing and maintains a structured
+approach. Daisy UI is a class library that provides styles for commonly used components. For
+more details, you can refer to the documentation of [Tailwind CSS][tailwind-docs] and [Daisy UI][daisy-docs].
+
+For customize Tailwind and theming styles go to `tailwind.config.js` file.
 
 ## I18n
 
@@ -250,3 +253,4 @@ about Lefthook here: [Lefthook Github][lefthook-github]
 [renovate-dashboard]: https://developer.mend.io/github/kudu-consultant/landing
 [renovate-docs]: https://docs.renovatebot.com/
 [lefthook-github]: https://github.com/evilmartians/lefthook
+[kudu-ui-system-repository]: https://github.com/kudu-consultant/kudu-ui-system

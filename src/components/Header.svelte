@@ -54,7 +54,7 @@
 				{#each [['/', locales.navElements.home], ['/services', locales.navElements.services], ['/web3', locales.navElements.web3], ['/about', locales.navElements.about]] as element}
 					<a
 						href={routePrefixLang + element[0]}
-						class="btn-link btn h-fit w-fit self-center duration-300 max-md:btn-block !no-underline"
+						class="btn-link btn h-fit w-fit self-center max-md:btn-block duration-300 !no-underline"
 						class:md:translate-y-1={segment === element[0]}
 						class:md:!text-base-200={segment === element[0]}
 						class:max-md:!text-primary={segment === element[0]}
@@ -67,7 +67,7 @@
 
 		<a
 			href={routePrefixLang + '/contact'}
-			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max"
+			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max rounded-full"
 			>{locales.cta}</a
 		>
 		<button
