@@ -16,9 +16,6 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "2.1.0",
 		"@sveltejs/kit": "1.21.0",
-		"@tailwindcss/aspect-ratio": "0.4.2",
-		"@tailwindcss/container-queries": "0.1.1",
-		"@tailwindcss/typography": "0.5.9",
 		"@types/nodemailer": "6.4.8",
 		"@typescript-eslint/eslint-plugin": "5.60.1",
 		"@typescript-eslint/parser": "5.60.1",
@@ -41,7 +38,7 @@
 	},
 	"dependencies": {
 		"@sentry/sveltekit": "7.57.0",
-		"daisyui": "3.1.7",
+		"kudu-ui-system": "0.1.2",
 		"nodemailer": "6.9.3",
 		"svelte-email": "0.0.4",
 		"svelte-icons": "2.1.0"

@@ -103,7 +103,7 @@
 
 	const classes = {
 		label: 'text-base-300 text-xs block mb-2',
-		input: 'input input-bordered mb-2 w-full',
+		input: 'input input-neutral input-bordered input-ghost mb-2 w-full',
 		link: 'link link-primary'
 	}
 </script>
@@ -221,7 +221,7 @@
 		</span>
 		<button
 			type="submit"
-			class="btn-primary btn-block btn mt-4 !rounded-lg"
+			class="btn-primary btn-block btn mt-4"
 			disabled={!(userStep === null || userStep === 'validation')}>{locales.buttonSubmit}</button
 		>
 	</div>

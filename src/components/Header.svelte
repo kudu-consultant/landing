@@ -67,7 +67,7 @@
 
 		<a
 			href={routePrefixLang + '/contact'}
-			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max"
+			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max rounded-full"
 			>{locales.cta}</a
 		>
 		<button
