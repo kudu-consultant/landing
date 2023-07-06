@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin } from 'svelte-bootstrap-icons'
-	import { Link } from 'svelte-email'
+	import { Github, Linkedin, Discord } from 'svelte-bootstrap-icons'
 
 	export let locales: {
 		announcement: {
@@ -118,11 +117,11 @@
 					class="btn btn-square btn-ghost"><Linkedin class="w-7 h-7" /></a
 				>
 			</li>
-			<!-- <li>
+			<li>
 				<a href="/" target="_blank" rel="noopener noreferrer" class="btn btn-square btn-ghost"
 					><Discord class="w-7 h-7" /></a
 				>
-			</li> -->
+			</li>
 		</ul>
 		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
 		<div class="flex items-center mt-8 space-x-8">

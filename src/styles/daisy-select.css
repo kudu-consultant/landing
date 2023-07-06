@@ -1,8 +1,0 @@
-@layer components {
-	[data-theme='kududesign'] .select {
-		@apply rounded-[0.5rem] bg-base-300 font-normal;
-	}
-	[data-theme='kududesign'] .select.select-sm {
-		@apply h-9;
-	}
-}
