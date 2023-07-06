@@ -47,11 +47,14 @@
 					}
 				]
 			},
-			"copyright": "Copyright © 2023, Kudu Consultant LLC",
+			"copyright": "Copyright © 2023, <span>Kudu Consultant LLC</span>",
 			"privacyPolicy": "Privacy Policy",
 			"terms": "Terms of Use",
 			"buttonCookiesManagment": "Cookie Management",
-			"langs": ["English", "Spanish"]
+			"langs": [
+				["en", "English"],
+				["es", "Spanish"]
+			]
 		}
 	},
 	"pages": {

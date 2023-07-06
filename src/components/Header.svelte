@@ -4,16 +4,9 @@
 	import { onMount } from 'svelte'
 	import IoMdMenu from 'svelte-icons/io/IoMdMenu.svelte'
 	import { fly } from 'svelte/transition'
+	import type { LocalesHeader } from '../types/locales-header'
 
-	export let locales: {
-		navElements: {
-			home: string
-			services: string
-			web3: string
-			about: string
-		}
-		cta: string
-	}
+	export let locales: LocalesHeader
 
 	let showMenu = false
 

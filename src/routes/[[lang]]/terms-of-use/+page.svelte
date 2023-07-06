@@ -1,4 +1,4 @@
-<section class="md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24">
+<section class="md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-16">
 	<div class="prose mx-auto">
 		<h1>Website Terms of Use</h1>
 		<p>Version 1.0</p>

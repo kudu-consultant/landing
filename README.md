@@ -165,6 +165,7 @@ When you run this development server, the changes you make in your frontend will
 | `src/components`     | Reusable visual components lib                                     |
 | `src/libs`           | Libs already to use                                                |
 | `src/locales`        | Store literals in all supported languages                          |
+| `src/types`          | Folder for TypeScript type definitions                             |
 | `src/utils`          | All js utils are inside here                                       |
 | `src/images`         | Store all static images (the static folder isn't working properly) |
 

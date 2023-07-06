@@ -9,9 +9,6 @@
 	body {
 		@apply bg-base-300 text-base-content font-HindSiliguri;
 	}
-	[data-theme='kududesign'] .divider {
-		@apply m-0 h-0;
-	}
 }
 
 .grecaptcha-badge {

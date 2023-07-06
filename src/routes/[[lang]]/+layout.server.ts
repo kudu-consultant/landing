@@ -1,6 +1,9 @@
 import { redirect } from '@sveltejs/kit'
 import type { LayoutServerLoad } from './$types'
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from 'CONSTANTS'
+import type { LocalesHeader } from '../../types/locales-header'
+import type { LocalesMetadata } from '../../types/locales-metadata'
+import type { LocalesFooter } from '../../types/locales-footer'
 
 export const load: LayoutServerLoad = async ({ cookies, params, url }) => {
 	const isFirstVisit = cookies.get('is-first-visit') === undefined
@@ -19,64 +22,13 @@ export const load: LayoutServerLoad = async ({ cookies, params, url }) => {
 	}
 
 	const locales: {
-		metadata: {
-			title: string
-			description: string
-		}
-		header: {
-			navElements: {
-				home: string
-				services: string
-				web3: string
-				about: string
-			}
-			cta: string
-		}
-		footer: {
-			announcement: {
-				title: string
-				cta: string
-			},
-			navigation: {
-				elements: [
-					{
-						title: string,
-						link: [string, string, string, string]
-					},
-					{
-						title: string,
-						links: [
-							string,
-							string,
-							string,
-							string,
-							string,
-							string,
-							string,
-							string,
-							string,
-							string,
-							string,
-							string
-						]
-					},
-					{
-						title: string,
-						links: [string, string, string, string]
-					}
-				]
-			},
-			licenses: {
-				links: [string, string, string, string, string]
-				button: [string, string]
-			}
-		}
-
+		metadata: LocalesMetadata
+		header: LocalesHeader
+		footer: LocalesFooter
 	} = (await import(`../../locales/${params.lang ?? DEFAULT_LANGUAGE}.json`)).default.layout
 	return {
 		locales
 	}
 }
-
 
 export const prerender = false
