@@ -7,7 +7,7 @@
 		"header": {
 			"navElements": {
 				"home": "Home",
-				"services": "Services",
+				"services": "Capabilities",
 				"web3": "Web3",
 				"about": "About us"
 			},
@@ -19,31 +19,40 @@
 				"cta": "Let's build together"
 			},
 			"navigation": {
+				"logo": { "alt": "Kudu logo" },
 				"elements": [
 					{
 						"title": "Company",
-						"links": ["Home", "Capabilies", "Web 3", "About us"]
+						"links": [
+							["/", "Home"],
+							["/capabilities", "Capabilies"],
+							["/web3", "Web 3"],
+							["/about", "About us"]
+						]
 					},
 					{
 						"title": "Services",
 						"links": [
-							"UX/UI design",
-							"Web development",
-							"Mobile development",
-							"Technical consulting",
-							"Custom corporate web",
-							"Tracker integrations",
-							"Web3 adoption consulting",
-							"Web3 tools integrations",
-							"Web3 protocol development",
-							"Smart contracts development",
-							"NFT solutions",
-							"Web3 audits"
+							["/", "UX/UI design"],
+							["/", "Web development"],
+							["/", "Mobile development"],
+							["/", "Technical consulting"],
+							["/", "Custom corporate web"],
+							["/", "Tracker integrations"],
+							["/", "Web3 adoption consulting"],
+							["/", "Web3 tools integrations"],
+							["/", "Web3 protocol development"],
+							["/", "Smart contracts development"],
+							["/", "NFT solutions"],
+							["/", "Web3 audits"]
 						]
 					},
 					{
 						"title": "Products",
-						"links": ["KuduPay", "Wallet Kudu", "SecondHand"]
+						"links": [
+							["/", "KuduPay"],
+							["/", "Wallet Kudu"]
+						]
 					}
 				]
 			},

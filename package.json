@@ -39,7 +39,7 @@
 	},
 	"dependencies": {
 		"@sentry/sveltekit": "7.57.0",
-		"kudu-ui-system": "0.1.7",
+		"kudu-ui-system": "0.1.8",
 		"nodemailer": "6.9.3",
 		"svelte-email": "0.0.4"
 	},

@@ -6,33 +6,11 @@ export interface LocalesFooter {
 		cta: string
 	}
 	navigation: {
-		elements: [
-			{
-				title: string
-				links: [string, string, string, string]
-			},
-			{
-				title: string
-				links: [
-					string,
-					string,
-					string,
-					string,
-					string,
-					string,
-					string,
-					string,
-					string,
-					string,
-					string,
-					string
-				]
-			},
-			{
-				title: string
-				links: [string, string, string, string]
-			}
-		]
+		logo: { alt: string }
+		elements: {
+			title: string
+			links: [string, string][]
+		}[]
 	}
 	copyright: string
 	privacyPolicy: string

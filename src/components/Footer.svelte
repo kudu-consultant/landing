@@ -8,7 +8,7 @@
 	export let locales: LocalesFooter
 
 	const handleChangeLang = (event: Event) => {
-		const selectedLang = (event.target as any).value as string
+		const selectedLang = (event.target as HTMLSelectElement).value as string
 		const routePrefixLang = selectedLang === DEFAULT_LANGUAGE ? '' : selectedLang
 		const pathname =
 			'/' + routePrefixLang + ($page.params.lang ? $page.url.pathname.slice(4) : $page.url.pathname)
@@ -26,53 +26,32 @@
 		</a>
 	</div>
 	<div class="bg-base-300 md:p-16 px-6 pt-9 pb-6 md:pb-8">
-		<div class="flex justify-start max-md:flex-col md:pb-14 pb-8">
-			<div class="flex justify-center items-center">
-				<img src="../images/logo.png" alt="" class="aspect-auto md:w-16 w-0 md:h-16 h-0" />
-			</div>
-			<ul class="flex flex-col md:space-y-6 space-y-4 items-start md:mx-24 mx-0 md:mb-0 mb-8">
-				<p class="text-sm text-primary-content">{locales.navigation.elements[0].title}</p>
-				{#each locales.navigation.elements[0].links as link}
-					<li>
-						<a class="text-base-200 text-sm" href="/">{link}</a>
-					</li>
-				{/each}
-			</ul>
-			<ul class="flex flex-col md:space-y-6 space-y-4 items-start md:mb-0 mb-4">
-				<p class="text-sm text-primary-content">{locales.navigation.elements[1].title}</p>
-				{#each locales.navigation.elements[1].links.slice(0, 4) as link}
-					<li>
-						<a class="text-base-200 text-sm" href="/">{link}</a>
-					</li>
-				{/each}
-			</ul>
-			<ul
-				class="flex flex-col justify-end md:space-y-6 space-y-4 items-start md:mx-24 mx-0 md:mb-0 mb-4"
-			>
-				{#each locales.navigation.elements[1].links.slice(4, 8) as link}
-					<li>
-						<a class="text-base-200 text-sm" href="/">{link}</a>
-					</li>
-				{/each}
-			</ul>
-			<ul
-				class="flex flex-col justify-end md:space-y-6 space-y-4 md:mr-24 mr-0 items-start md:mb-0 mb-8"
-			>
-				{#each locales.navigation.elements[1].links.slice(8, 12) as link}
-					<li>
-						<a class="text-base-200 text-sm" href="/">{link}</a>
-					</li>
-				{/each}
-			</ul>
-			<ul class="flex flex-col md:space-y-6 space-y-4 items-start">
-				<p class="text-sm text-primary-content">{locales.navigation.elements[2].title}</p>
-				{#each locales.navigation.elements[2].links as link}
-					<li>
-						<a class="text-base-200 text-sm" href="/">{link}</a>
-					</li>
-				{/each}
-			</ul>
-		</div>
+		<ul class="grid grid-cols-[auto,auto,auto,auto] gap-x-8 md:mb-14 mb-8 h-52">
+			<li class="grid place-content-center w-52 h-52 max-lg:hidden">
+				<img
+					src="../images/logo.png"
+					alt={locales.navigation.logo.alt}
+					class="aspect-1/1 w-full h-full"
+				/>
+			</li>
+			{#each locales.navigation.elements as element}
+				<li>
+					<ul class="h-full flex flex-col">
+						<span class="text-base font-bold">{element.title}</span>
+						<div class="h-full grid grid-rows-4 grid-flow-col-dense gap-x-8">
+							{#each element.links as link}
+								<li class="mt-auto">
+									<a
+										class="btn btn-link !no-underline btn-sm -ml-3 !text-base-200 hover:!text-base-100"
+										href={link[0]}>{link[1]}</a
+									>
+								</li>
+							{/each}
+						</div>
+					</ul>
+				</li>
+			{/each}
+		</ul>
 		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
 		<ul class="flex justify-center md:py-8 py-4 space-x-4 sh">
 			<!-- <li>

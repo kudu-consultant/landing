@@ -44,7 +44,7 @@
 				class:max-md:hidden={!showMenu}
 				transition:fly={{ duration: 300 }}
 			>
-				{#each [['/', locales.navElements.home], ['/services', locales.navElements.services], ['/web3', locales.navElements.web3], ['/about', locales.navElements.about]] as element}
+				{#each [['/', locales.navElements.home], ['/capabilities', locales.navElements.services], ['/web3', locales.navElements.web3], ['/about', locales.navElements.about]] as element}
 					<a
 						href={routePrefixLang + element[0]}
 						class="btn-link btn h-fit w-fit self-center max-md:btn-block duration-300 !no-underline"
