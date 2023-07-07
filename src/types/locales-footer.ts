@@ -1,3 +1,5 @@
+import type { ISUPPORTED_LANGUAGES } from 'CONSTANTS'
+
 export interface LocalesFooter {
 	announcement: {
 		title: string
@@ -36,5 +38,5 @@ export interface LocalesFooter {
 	privacyPolicy: string
 	terms: string
 	buttonCookiesManagment: string
-	langs: [string, string][]
+	langs: [ISUPPORTED_LANGUAGES, string][]
 }
