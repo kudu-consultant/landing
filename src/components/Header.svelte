@@ -2,7 +2,7 @@
 	import { beforeNavigate } from '$app/navigation'
 	import { page } from '$app/stores'
 	import { onMount } from 'svelte'
-	import IoMdMenu from 'svelte-icons/io/IoMdMenu.svelte'
+	import Menu from 'kudu-ui-system/src/icons/Menu.svelte'
 	import { fly } from 'svelte/transition'
 	import type { LocalesHeader } from '../types/locales-header'
 
@@ -64,8 +64,8 @@
 			>{locales.cta}</a
 		>
 		<button
-			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square"
-			on:click|preventDefault={toggleMenu}><IoMdMenu /></button
+			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square fill-neutral"
+			on:click|preventDefault={toggleMenu}><Menu /></button
 		>
 	</nav>
 </header>

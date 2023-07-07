@@ -3,11 +3,12 @@
 	import ContactForm from 'components/ContactForm.svelte'
 	import Recaptcha from 'components/Recaptcha.svelte'
 	import type { PageData } from './$types'
+	import type { ContactForm as IContactForm } from '../../../types/contact-form'
 
 	export let data: PageData
 	const { locales } = data
 
-	let form: any
+	let form: IContactForm
 	export const snapshot = {
 		capture: () => form,
 		restore: value => (form = value)
