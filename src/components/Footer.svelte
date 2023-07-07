@@ -26,47 +26,53 @@
 		</a>
 	</div>
 	<div class="bg-base-300 md:p-16 px-6 pt-9 pb-6 md:pb-8">
-		<!-- <div class="flex justify-start max-md:flex-col md:pb-14 pb-8">
+		<div class="flex justify-start max-md:flex-col md:pb-14 pb-8">
 			<div class="flex justify-center items-center">
 				<img src="../images/logo.png" alt="" class="aspect-auto md:w-16 w-0 md:h-16 h-0" />
 			</div>
-			<div class="flex flex-col md:space-y-6 space-y-4 items-start md:mx-24 mx-0 md:mb-0 mb-8">
+			<ul class="flex flex-col md:space-y-6 space-y-4 items-start md:mx-24 mx-0 md:mb-0 mb-8">
 				<p class="text-sm text-primary-content">{locales.navigation.elements[0].title}</p>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[0].links[0]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[0].links[1]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[0].links[2]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[0].links[3]}</a>
-			</div>
-			<div class="flex flex-col md:space-y-6 space-y-4 items-start md:mb-0 mb-4">
+				{#each locales.navigation.elements[0].links as link}
+					<li>
+						<a class="text-base-200 text-sm" href="/">{link}</a>
+					</li>
+				{/each}
+			</ul>
+			<ul class="flex flex-col md:space-y-6 space-y-4 items-start md:mb-0 mb-4">
 				<p class="text-sm text-primary-content">{locales.navigation.elements[1].title}</p>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[0]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[1]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[2]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[3]}</a>
-			</div>
-			<div
+				{#each locales.navigation.elements[1].links.slice(0, 4) as link}
+					<li>
+						<a class="text-base-200 text-sm" href="/">{link}</a>
+					</li>
+				{/each}
+			</ul>
+			<ul
 				class="flex flex-col justify-end md:space-y-6 space-y-4 items-start md:mx-24 mx-0 md:mb-0 mb-4"
 			>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[4]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[5]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[6]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[7]}</a>
-			</div>
-			<div
+				{#each locales.navigation.elements[1].links.slice(4, 8) as link}
+					<li>
+						<a class="text-base-200 text-sm" href="/">{link}</a>
+					</li>
+				{/each}
+			</ul>
+			<ul
 				class="flex flex-col justify-end md:space-y-6 space-y-4 md:mr-24 mr-0 items-start md:mb-0 mb-8"
 			>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[8]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[9]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[10]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[1].links[11]}</a>
-			</div>
-			<div class="flex flex-col md:space-y-6 space-y-4 items-start">
+				{#each locales.navigation.elements[1].links.slice(8, 12) as link}
+					<li>
+						<a class="text-base-200 text-sm" href="/">{link}</a>
+					</li>
+				{/each}
+			</ul>
+			<ul class="flex flex-col md:space-y-6 space-y-4 items-start">
 				<p class="text-sm text-primary-content">{locales.navigation.elements[2].title}</p>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[2].links[0]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[2].links[1]}</a>
-				<a class="text-base-200 text-sm" href="/">{locales.navigation.elements[2].links[2]}</a>
-			</div>
-		</div> -->
+				{#each locales.navigation.elements[2].links as link}
+					<li>
+						<a class="text-base-200 text-sm" href="/">{link}</a>
+					</li>
+				{/each}
+			</ul>
+		</div>
 		<div class="divider max-xs:w-screen max-xs:!-ml-6" />
 		<ul class="flex justify-center md:py-8 py-4 space-x-4 sh">
 			<!-- <li>
