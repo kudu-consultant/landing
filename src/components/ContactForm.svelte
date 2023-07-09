@@ -6,8 +6,7 @@
 	import { CheckCircle, CrossCircle } from 'kudu-components/icons'
 	import { page } from '$app/stores'
 	import { DEFAULT_LANGUAGE } from 'CONSTANTS'
-	import type { LocalesContactForm } from '../types/locales-contact-form'
-	import type { ContactForm } from '../types/contact-form'
+	import type { ContactForm, LocalesContactForm } from '../types'
 
 	export let form: ContactForm
 	export let extraclass = ''

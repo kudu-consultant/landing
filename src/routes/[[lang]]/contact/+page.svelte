@@ -1,9 +1,8 @@
 <script lang="ts">
 	/* eslint-disable @typescript-eslint/no-explicit-any */
-	import ContactForm from 'components/ContactForm.svelte'
-	import Recaptcha from 'components/Recaptcha.svelte'
+	import { ContactForm, Recaptcha } from 'components'
 	import type { PageData } from './$types'
-	import type { ContactForm as IContactForm } from '../../../types/contact-form'
+	import type { ContactForm as IContactForm } from '../../../types'
 
 	export let data: PageData
 	const { locales } = data

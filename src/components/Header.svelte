@@ -3,7 +3,7 @@
 	import { page } from '$app/stores'
 	import { onMount } from 'svelte'
 	import { fly } from 'svelte/transition'
-	import type { LocalesHeader } from '../types/locales-header'
+	import type { LocalesHeader } from '../types'
 	import { Menu } from 'kudu-components/icons'
 
 	export let locales: LocalesHeader

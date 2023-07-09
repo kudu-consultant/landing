@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores'
 	import { DEFAULT_LANGUAGE } from 'CONSTANTS'
-	import type { LocalesFooter } from '../types/locales-footer'
+	import type { LocalesFooter } from '../types'
 	import { Github, LinkedIn } from 'kudu-components/icons'
 
 	export let locales: LocalesFooter

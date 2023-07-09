@@ -1,5 +1,5 @@
 import { DEFAULT_LANGUAGE } from 'CONSTANTS'
-import type { LocalesContactForm } from '../../../types/locales-contact-form.js'
+import type { LocalesContactForm } from '../../../types'
 
 export const load = async ({ params }) => {
 	const locales: {
