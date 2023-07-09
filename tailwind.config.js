@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { tailwindPreset } = require('kudu-ui-system')
+const { tailwindPreset } = require('kudu-ui-system/tailwindcss')
 
 /** @type {import('tailwindcss').Config} */
 export default {

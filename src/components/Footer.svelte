@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores'
 	import { DEFAULT_LANGUAGE } from 'CONSTANTS'
-	import Linkedin from 'kudu-ui-system/src/icons/Linkedin.svelte'
-	import Github from 'kudu-ui-system/src/icons/Github.svelte'
 	import type { LocalesFooter } from '../types/locales-footer'
+	import { Github, LinkedIn } from 'kudu-components/icons'
 
 	export let locales: LocalesFooter
 
@@ -72,7 +71,7 @@
 					href="https://www.linkedin.com/company/kudu-consultant-llc"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-square btn-ghost child:w-7 child:h-7"><Linkedin /></a
+					class="btn btn-square btn-ghost child:w-7 child:h-7"><LinkedIn /></a
 				>
 			</li>
 			<!-- <li>

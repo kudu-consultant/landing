@@ -1,4 +1,4 @@
-@import 'kudu-ui-system/src/styles/index.css';
+@import 'kudu-ui-system/styles';
 
 @tailwind base;
 @tailwind components;

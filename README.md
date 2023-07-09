@@ -149,7 +149,6 @@ When you run this development server, the changes you make in your frontend will
 | `.eslintrc.cjs`      | Config file for lint                                               |
 | `.eslintignore`      | Config file for lint ignore                                        |
 | `lefthook.yml`       | Config file for lefthook (githooks tools)                          |
-| `.lefthook`          | Folder scripts for lefthook (githooks tools)                       |
 | `renovate.json`      | Config file for renovate bot (Github app)                          |
 | `.gitignore`         | Config file for git ignore                                         |
 | `.vscode`            | Specific vscode config for project                                 |
