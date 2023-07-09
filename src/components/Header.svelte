@@ -57,7 +57,6 @@
 				{/each}
 			</ul>
 		{/key}
-
 		<a
 			href={routePrefixLang + locales.cta[0]}
 			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max rounded-full"

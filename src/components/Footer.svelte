@@ -15,7 +15,7 @@
 	}
 </script>
 
-<footer>
+<footer class="max-w-screen-2xl mx-auto">
 	<div class="bg-primary md:p-16 py-8 px-6 text-center">
 		<span class="text-base-100 font-bold md:text-2xl text-xl block text-center"
 			>{locales.announcement.title}
@@ -25,8 +25,8 @@
 		</a>
 	</div>
 	<div class="bg-base-300 md:p-16 px-6 pt-9 pb-6 md:pb-8">
-		<ul class="grid grid-cols-[auto,auto,auto,auto] gap-x-8 md:mb-14 mb-8 h-52">
-			<li class="grid place-content-center w-52 h-52 max-lg:hidden">
+		<ul class="xl:grid xl:grid-cols-[auto,auto,auto,auto] xl:gap-x-8 md:mb-14 mb-8 xl:h-52">
+			<li class="grid place-content-center w-52 h-52 max-xl:hidden">
 				<img
 					src="../images/logo.png"
 					alt={locales.navigation.logo.alt}
@@ -37,11 +37,13 @@
 				<li>
 					<ul class="h-full flex flex-col">
 						<span class="text-base font-bold">{element.title}</span>
-						<div class="h-full grid grid-rows-4 grid-flow-col-dense gap-x-8">
+						<div
+							class="h-full grid xl:grid-rows-4 grid-cols-[repeat(auto-fill,minmax(200px,1fr))] xl:grid-flow-col-dense gap-x-8"
+						>
 							{#each element.links as link}
 								<li class="mt-auto">
 									<a
-										class="btn btn-link !no-underline btn-sm -ml-3 !text-base-200 hover:!text-base-100"
+										class="btn btn-link text-left whitespace-nowrap !no-underline btn-sm -ml-3 !text-base-200 hover:!text-base-100"
 										href={link[0]}>{link[1]}</a
 									>
 								</li>

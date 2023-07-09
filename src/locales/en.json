@@ -9,7 +9,8 @@
 				["/", "Home"],
 				["/capabilities", "Capabilies"],
 				["/web3", "Web 3"],
-				["/about", "About us"]],
+				["/about", "About us"]
+			],
 			"cta": ["/contact", "Contact us"]
 		},
 		"footer": {
