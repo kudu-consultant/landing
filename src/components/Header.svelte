@@ -44,7 +44,7 @@
 				class:max-md:hidden={!showMenu}
 				transition:fly={{ duration: 300 }}
 			>
-				{#each [['/', locales.navElements.home], ['/capabilities', locales.navElements.services], ['/web3', locales.navElements.web3], ['/about', locales.navElements.about]] as element}
+				{#each locales.navElements as element}
 					<a
 						href={routePrefixLang + element[0]}
 						class="btn-link btn h-fit w-fit self-center max-md:btn-block duration-300 !no-underline"
@@ -59,9 +59,9 @@
 		{/key}
 
 		<a
-			href={routePrefixLang + '/contact'}
+			href={routePrefixLang + locales.cta[0]}
 			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max rounded-full"
-			>{locales.cta}</a
+			>{locales.cta[1]}</a
 		>
 		<button
 			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square fill-neutral"

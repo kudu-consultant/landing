@@ -5,13 +5,12 @@
 			"description": "Description"
 		},
 		"header": {
-			"navElements": {
-				"home": "Home",
-				"services": "Capabilities",
-				"web3": "Web3",
-				"about": "About us"
-			},
-			"cta": "Contact us"
+			"navElements": [
+				["/", "Home"],
+				["/capabilities", "Capabilies"],
+				["/web3", "Web 3"],
+				["/about", "About us"]],
+			"cta": ["/contact", "Contact us"]
 		},
 		"footer": {
 			"announcement": {
