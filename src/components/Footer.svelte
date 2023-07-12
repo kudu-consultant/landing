@@ -44,10 +44,10 @@
 					<ul class="h-full flex flex-col">
 						<span class="text-sm font-bold mb-2">{element.title}</span>
 						<div
-							class="h-full grid xl:grid-rows-4 max-xl:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] xl:grid-flow-col-dense gap-x-8"
+							class="h-full grid max-xl:grid-rows-1 xl:grid-rows-4 max-xl:grid-cols-[repeat(auto-fill,minmax(220px,1fr))] xl:grid-flow-col-dense gap-x-8"
 						>
 							{#each element.links as link}
-								<li class="mt-auto">
+								<li class="xl:mt-auto">
 									<a
 										class="btn btn-link text-left whitespace-nowrap !no-underline btn-sm -ml-3 !text-base-200 hover:!text-base-100"
 										class:cursor-default={link[0] === ''}
