@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class="hero min-h-[calc(100vh-96px)] max-w-screen-2xl md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24"
+	class="hero min-h-[calc(100vh-96px)] max-w-screen-2xl mx-auto md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24"
 >
 	<div class="hero-content h-full w-full">
 		<div class="h-full w-full">

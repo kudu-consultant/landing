@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from 'components/Header.svelte'
+	import { Header, Footer } from 'components'
 	import type { LayoutData } from './$types'
 
 	export let data: LayoutData
@@ -13,3 +13,4 @@
 
 <Header locales={locales.header} />
 <slot />
+<Footer locales={locales.footer} />

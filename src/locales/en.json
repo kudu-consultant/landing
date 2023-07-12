@@ -5,13 +5,65 @@
 			"description": "Description"
 		},
 		"header": {
-			"navElements": {
-				"home": "Home",
-				"services": "Services",
-				"web3": "Web3",
-				"about": "About us"
+			"navElements": [
+				["/", "Home"],
+				["/capabilities", "Capabilies"],
+				["/web3", "Web 3"],
+				["/about", "About us"]
+			],
+			"cta": ["/contact", "Contact us"]
+		},
+		"footer": {
+			"announcement": {
+				"title": "We're building the future.",
+				"cta": "Let's build together"
 			},
-			"cta": "Contact us"
+			"navigation": {
+				"logo": { "alt": "Kudu logo" },
+				"elements": [
+					{
+						"title": "Company",
+						"links": [
+							["/", "Home"],
+							["/capabilities", "Capabilies"],
+							["/web3", "Web 3"],
+							["/about", "About us"]
+						]
+					},
+					{
+						"title": "Services",
+						"links": [
+							["", "UX/UI design"],
+							["", "Web development"],
+							["", "Mobile development"],
+							["", "Technical consulting"],
+							["", "Custom corporate web"],
+							["", "Tracker integrations"],
+							["", "Web3 adoption consulting"],
+							["", "Web3 tools integrations"],
+							["", "Web3 protocol development"],
+							["", "Smart contracts development"],
+							["", "NFT solutions"],
+							["", "Web3 audits"]
+						]
+					},
+					{
+						"title": "Products",
+						"links": [
+							["", "KuduPay"],
+							["", "Wallet Kudu"]
+						]
+					}
+				]
+			},
+			"copyright": "Copyright © 2023, <span>Kudu Consultant LLC</span>",
+			"privacyPolicy": "Privacy Policy",
+			"terms": "Terms of Use",
+			"buttonCookiesManagment": "Cookie Management",
+			"langs": [
+				["en", "English"],
+				["es", "Spanish"]
+			]
 		}
 	},
 	"pages": {

@@ -149,7 +149,6 @@ When you run this development server, the changes you make in your frontend will
 | `.eslintrc.cjs`      | Config file for lint                                               |
 | `.eslintignore`      | Config file for lint ignore                                        |
 | `lefthook.yml`       | Config file for lefthook (githooks tools)                          |
-| `.lefthook`          | Folder scripts for lefthook (githooks tools)                       |
 | `renovate.json`      | Config file for renovate bot (Github app)                          |
 | `.gitignore`         | Config file for git ignore                                         |
 | `.vscode`            | Specific vscode config for project                                 |
@@ -165,6 +164,7 @@ When you run this development server, the changes you make in your frontend will
 | `src/components`     | Reusable visual components lib                                     |
 | `src/libs`           | Libs already to use                                                |
 | `src/locales`        | Store literals in all supported languages                          |
+| `src/types`          | Folder for TypeScript type definitions                             |
 | `src/utils`          | All js utils are inside here                                       |
 | `src/images`         | Store all static images (the static folder isn't working properly) |
 

@@ -2,18 +2,11 @@
 	import { beforeNavigate } from '$app/navigation'
 	import { page } from '$app/stores'
 	import { onMount } from 'svelte'
-	import IoMdMenu from 'svelte-icons/io/IoMdMenu.svelte'
 	import { fly } from 'svelte/transition'
+	import type { LocalesHeader } from '../types'
+	import { Menu } from 'kudu-components/icons'
 
-	export let locales: {
-		navElements: {
-			home: string
-			services: string
-			web3: string
-			about: string
-		}
-		cta: string
-	}
+	export let locales: LocalesHeader
 
 	let showMenu = false
 
@@ -51,10 +44,10 @@
 				class:max-md:hidden={!showMenu}
 				transition:fly={{ duration: 300 }}
 			>
-				{#each [['/', locales.navElements.home], ['/services', locales.navElements.services], ['/web3', locales.navElements.web3], ['/about', locales.navElements.about]] as element}
+				{#each locales.navElements as element}
 					<a
 						href={routePrefixLang + element[0]}
-						class="btn-link btn h-fit w-fit self-center duration-300 max-md:btn-block !no-underline"
+						class="btn-link btn h-fit w-fit self-center max-md:btn-block duration-300 !no-underline"
 						class:md:translate-y-1={segment === element[0]}
 						class:md:!text-base-200={segment === element[0]}
 						class:max-md:!text-primary={segment === element[0]}
@@ -64,15 +57,14 @@
 				{/each}
 			</ul>
 		{/key}
-
 		<a
-			href={routePrefixLang + '/contact'}
+			href={routePrefixLang + locales.cta[0]}
 			class="btn-primary md:btn-md btn-sm btn mr-4 w-fit place-self-end self-center min-w-max rounded-full"
-			>{locales.cta}</a
+			>{locales.cta[1]}</a
 		>
 		<button
-			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square"
-			on:click|preventDefault={toggleMenu}><IoMdMenu /></button
+			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square fill-neutral"
+			on:click|preventDefault={toggleMenu}><Menu /></button
 		>
 	</nav>
 </header>

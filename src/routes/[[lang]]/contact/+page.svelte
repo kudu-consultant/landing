@@ -1,13 +1,13 @@
 <script lang="ts">
 	/* eslint-disable @typescript-eslint/no-explicit-any */
-	import ContactForm from 'components/ContactForm.svelte'
-	import Recaptcha from 'components/Recaptcha.svelte'
+	import { ContactForm, Recaptcha } from 'components'
 	import type { PageData } from './$types'
+	import type { ContactForm as IContactForm } from '../../../types'
 
 	export let data: PageData
 	const { locales } = data
 
-	let form: any
+	let form: IContactForm
 	export const snapshot = {
 		capture: () => form,
 		restore: value => (form = value)
@@ -17,7 +17,7 @@
 <Recaptcha />
 
 <section
-	class="hero min-h-[calc(100vh-96px)] max-w-screen-2xl md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24 @container"
+	class="hero min-h-[calc(100vh-96px)] max-w-screen-2xl mx-auto md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24 @container"
 >
 	<div
 		class="hero-content @3xl:grid block h-full w-full justify-start gap-0 @3xl:grid-cols-2 @3xl:justify-center @3xl:gap-6"

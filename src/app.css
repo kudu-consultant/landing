@@ -1,15 +1,8 @@
-@import 'kudu-ui-system/src/styles/index.css';
+@import 'kudu-ui-system/styles';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-	html,
-	body {
-		@apply bg-base-300 text-base-content font-HindSiliguri;
-	}
-}
 
 .grecaptcha-badge {
 	visibility: hidden;
