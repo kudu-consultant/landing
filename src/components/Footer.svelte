@@ -25,9 +25,7 @@
 		</a>
 	</div>
 	<div class="bg-base-300 md:p-16 px-6 pt-9 pb-6 md:pb-8">
-		<ul
-			class="xl:grid xl:grid-cols-[auto,auto,auto,auto] xl:gap-x-8 md:mb-14 mb-8 xl:h-52 space-y-3 max-xl:w-[1127px] max-xl:max-w-full"
-		>
+		<ul class="xl:grid xl:grid-cols-[auto,auto,auto,auto] xl:gap-x-8 md:mb-14 mb-8 xl:h-52">
 			<li class="grid place-content-center w-52 h-52 max-xl:hidden">
 				<img
 					src="../images/logo.png"
@@ -36,11 +34,11 @@
 				/>
 			</li>
 			{#each locales.navigation.elements as element}
-				<li class="">
+				<li>
 					<ul class="h-full flex flex-col">
-						<span class="text-base font-bold max-xl:mb-2">{element.title}</span>
+						<span class="text-base font-bold">{element.title}</span>
 						<div
-							class="h-full grid xl:grid-rows-4 max-xl:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] xl:grid-flow-col-dense gap-x-8"
+							class="h-full grid xl:grid-rows-4 grid-cols-[repeat(auto-fill,minmax(200px,1fr))] xl:grid-flow-col-dense gap-x-8"
 						>
 							{#each element.links as link}
 								<li class="mt-auto">
@@ -89,22 +87,28 @@
 			<address class="text-sm not-italic mr-auto child:whitespace-nowrap">
 				{@html locales.copyright}
 			</address>
-			<ul class="md:flex md:shrink-0 md:items-center md:space-x-1 max-md:my-8 -ml-3">
+			<ul
+				class="md:flex md:shrink-0 md:items-center md:space-x-1 max-md:my-8 -ml-3 max-md:grid max-md:grid-cols-3"
+			>
 				<li>
-					<button class="md:px-1 btn-sm btn btn-link !no-underline"
+					<button class="md:px-1 btn-sm btn btn-link !no-underline max-md:w-fit"
 						>{locales.buttonCookiesManagment}</button
 					>
 				</li>
 				<div class="max-md:hidden">|</div>
 				<li>
-					<a class="md:px-1 btn btn-link btn-sm !no-underline" rel="bookmark" href="/terms-of-use"
-						>{locales.terms}</a
+					<a
+						class="md:px-1 btn btn-link btn-sm !no-underline max-md:w-fit"
+						rel="bookmark"
+						href="/terms-of-use">{locales.terms}</a
 					>
 				</li>
 				<div class="max-md:hidden">|</div>
 				<li>
-					<a class="md:px-1 btn btn-link btn-sm !no-underline" rel="bookmark" href="/privacy-policy"
-						>{locales.privacyPolicy}</a
+					<a
+						class="md:px-1 btn btn-link btn-sm !no-underline max-md:w-fit"
+						rel="bookmark"
+						href="/privacy-policy">{locales.privacyPolicy}</a
 					>
 				</li>
 			</ul>
