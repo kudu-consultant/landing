@@ -3,40 +3,14 @@
 	import { env } from '$env/dynamic/public'
 	import { validators } from 'utils'
 	import { logger } from 'libs/logger'
-	import FaCheckCircle from 'svelte-icons/fa/FaCheckCircle.svelte'
-	import FaTimesCircle from 'svelte-icons/fa/FaTimesCircle.svelte'
+	import { CheckCircle, CrossCircle } from 'kudu-components/icons'
 	import { page } from '$app/stores'
 	import { DEFAULT_LANGUAGE } from 'CONSTANTS'
+	import type { ContactForm, LocalesContactForm } from '../types'
 
-	export let form: {
-		name: {
-			value: string
-			error: boolean
-		}
-		email: {
-			value: string
-			error: boolean
-		}
-		subject: {
-			value: string
-			error: boolean
-		}
-		message: {
-			value: string
-			error: boolean
-		}
-	}
+	export let form: ContactForm
 	export let extraclass = ''
-	export let locales: {
-		labels: {
-			name: string
-			email: string
-			subject: string
-			message: string
-		}
-		recaptchaNode: string
-		buttonSubmit: string
-	}
+	export let locales: LocalesContactForm
 
 	let formElement: HTMLFormElement | undefined
 
@@ -103,7 +77,7 @@
 
 	const classes = {
 		label: 'text-base-300 text-xs block mb-2',
-		input: 'input input-bordered mb-2 w-full',
+		input: 'input input-neutral input-bordered input-ghost mb-2 w-full',
 		link: 'link link-primary'
 	}
 </script>
@@ -118,13 +92,13 @@
 			<div class="w-[448px] max-w-md text-center">
 				<div
 					class="mx-auto my-4 h-24 w-24"
-					class:text-success={userStep === 'success'}
-					class:text-error={userStep === 'error'}
+					class:fill-success={userStep === 'success'}
+					class:fill-error={userStep === 'error'}
 				>
 					{#if userStep === 'success'}
-						<FaCheckCircle />
+						<CheckCircle />
 					{:else}
-						<FaTimesCircle />
+						<CrossCircle />
 					{/if}
 				</div>
 				<span class="text-base text-base-300">
@@ -136,7 +110,7 @@
 				>
 				{#if userStep === 'error'}
 					<button
-						class="btn-primary btn mx-auto mt-6 block"
+						class="btn mx-auto mt-6 block"
 						on:click={() => {
 							userStep = null
 						}}
@@ -221,7 +195,7 @@
 		</span>
 		<button
 			type="submit"
-			class="btn-primary btn-block btn mt-4 !rounded-lg"
+			class="btn-primary btn-block btn mt-4"
 			disabled={!(userStep === null || userStep === 'validation')}>{locales.buttonSubmit}</button
 		>
 	</div>

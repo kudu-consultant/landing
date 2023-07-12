@@ -1,6 +1,6 @@
-<section class="md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-24">
+<section class="md:px-16 xs:px-6 px-4 md:pb-16 pb-4 pt-6 md:pt-16">
 	<div class="prose mx-auto">
-		<h2>Website Terms of Use</h2>
+		<h1>Website Terms of Use</h1>
 		<p>Version 1.0</p>
 		<p>
 			The kudu.design website located at https://www.kudu.design/ is a copyrighted work belonging to
@@ -87,10 +87,18 @@
 			him or her must have materially affected his or her settlement with the debtor."
 		</p>
 		<p>
-			<strong>Cookies and Web Beacons.</strong> Like any other website, kudu.design uses ‘cookies'. These
-			cookies are used to store information including visitors' preferences, and the pages on the website
-			that the visitor accessed or visited. The information is used to optimize the users' experience
-			by customizing our web page content based on visitors' browser type and/or other information.
+			<strong>Cookies and Web Beacons.</strong> Like any other website, venturarodriguez.xyz uses
+			"cookies". These cookies are used to store information including visitors' preferences, and
+			the pages on the website that the visitor accessed or visited. The information is used to
+			optimize the users' experience by customizing our web page content based on visitors' browser
+			type and/or other information. <br />
+			We strive to ensure that the collection and use of cookies comply with applicable privacy laws
+			and regulations. You can adjust your cookie settings or opt-out of certain cookies by accessing
+			the settings in your browser. However, please note that disabling certain cookies may impact the
+			functionality and user experience of our website. <br />
+			If you have any concerns or questions about our use of cookies, please feel free to contact us.
+			We value your privacy and are committed to providing you with a transparent and satisfactory browsing
+			experience on kudu.design.
 		</p>
 		<h2>Disclaimers</h2>
 		<p>

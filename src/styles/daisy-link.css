@@ -1,5 +1,0 @@
-@layer components {
-	[data-theme='kududesign'] .link {
-		@apply underline-offset-4;
-	}
-}
