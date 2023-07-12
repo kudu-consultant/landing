@@ -25,7 +25,9 @@
 		</a>
 	</div>
 	<div class="bg-base-300 md:p-16 px-6 pt-9 pb-6 md:pb-8">
-		<ul class="xl:grid xl:grid-cols-[auto,auto,auto,auto] xl:gap-x-8 md:mb-14 mb-8 xl:h-52">
+		<ul
+			class="xl:grid xl:grid-cols-[auto,auto,auto,auto] xl:gap-x-8 md:mb-14 mb-8 xl:h-52 space-y-3 max-xl:w-[1127px] max-xl:max-w-full"
+		>
 			<li class="grid place-content-center w-52 h-52 max-xl:hidden">
 				<img
 					src="../images/logo.png"
@@ -34,11 +36,11 @@
 				/>
 			</li>
 			{#each locales.navigation.elements as element}
-				<li>
+				<li class="">
 					<ul class="h-full flex flex-col">
-						<span class="text-base font-bold">{element.title}</span>
+						<span class="text-base font-bold max-xl:mb-2">{element.title}</span>
 						<div
-							class="h-full grid xl:grid-rows-4 grid-cols-[repeat(auto-fill,minmax(200px,1fr))] xl:grid-flow-col-dense gap-x-8"
+							class="h-full grid xl:grid-rows-4 max-xl:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] xl:grid-flow-col-dense gap-x-8"
 						>
 							{#each element.links as link}
 								<li class="mt-auto">
