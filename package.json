@@ -36,7 +36,7 @@
 		"vite": "4.3.9"
 	},
 	"dependencies": {
-		"@sentry/sveltekit": "7.57.0",
+		"@sentry/sveltekit": "7.58.1",
 		"kudu-components": "0.0.6",
 		"kudu-ui-system": "0.1.17",
 		"kudu-utils": "^0.0.5",
