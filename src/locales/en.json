@@ -2,7 +2,7 @@
 	"layout": {
 		"metadata": {
 			"title": "Kudu",
-			"description": "Description"
+			"description": "Unlock the potential of Web3 solutions with our tailored IT services. We transform your vision into a successful digital presence, delivering cutting-edge Web3 services and custom development."
 		},
 		"header": {
 			"navElements": [
@@ -25,7 +25,7 @@
 						"title": "Company",
 						"links": [
 							["/", "Home"],
-							["/capabilities", "Capabilies"],
+							["/capabilities", "Services"],
 							["/web3", "Web 3"],
 							["/about", "About us"]
 						]
@@ -36,13 +36,13 @@
 							["", "UX/UI design"],
 							["", "Web development"],
 							["", "Mobile development"],
-							["", "Technical consulting"],
+							["", "Technical consultancy"],
 							["", "Custom corporate web"],
 							["", "Tracker integrations"],
-							["", "Web3 adoption consulting"],
-							["", "Web3 tools integrations"],
+							["", "Web3 consultancy"],
+							["", "Web3 toolS integrations"],
 							["", "Web3 protocol development"],
-							["", "Smart contracts development"],
+							["", "Smart contract development"],
 							["", "NFT solutions"],
 							["", "Web3 audits"]
 						]
@@ -51,7 +51,7 @@
 						"title": "Products",
 						"links": [
 							["", "KuduPay"],
-							["", "Wallet Kudu"]
+							["", "Kudu Wallet"]
 						]
 					}
 				]
