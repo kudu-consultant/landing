@@ -2,7 +2,7 @@
 	"layout": {
 		"metadata": {
 			"title": "Kudu",
-			"description": "Description"
+			"description": "Desbloquea el potencial de las soluciones Web3 con nuestros servicios IT personalizados. Transformamos tu visión en una presencia digital exitosa, ofreciendo servicios Web3 de vanguardia y desarrollo a medida."
 		},
 		"header": {
 			"navElements": [
@@ -15,40 +15,42 @@
 		},
 		"footer": {
 			"announcement": {
-				"title": "We're building the future.",
-				"cta": "Let's build together"
+				"title": "Estamos construyendo el futuro.",
+				"cta": "¡Construyamos juntos!"
 			},
 			"navigation": {
-				"logo": { "alt": "Kudu logo" },
+				"logo": {
+					"alt": "Logo de Kudu"
+				},
 				"elements": [
 					{
-						"title": "Company",
+						"title": "Empresa",
 						"links": [
-							["/", "Home"],
-							["/capabilities", "Capabilies"],
+							["/", "Inicio"],
+							["/capabilities", "Capacidades"],
 							["/web3", "Web 3"],
-							["/about", "About us"]
+							["/about", "Sobre nosotros"]
 						]
 					},
 					{
-						"title": "Services",
+						"title": "Servicios",
 						"links": [
-							["", "UX/UI design"],
-							["", "Web development"],
-							["", "Mobile development"],
-							["", "Technical consulting"],
-							["", "Custom corporate web"],
-							["", "Tracker integrations"],
-							["", "Web3 adoption consulting"],
-							["", "Web3 tools integrations"],
-							["", "Web3 protocol development"],
-							["", "Smart contracts development"],
-							["", "NFT solutions"],
-							["", "Web3 audits"]
+							["", "Diseño UX/UI"],
+							["", "Desarrollo web"],
+							["", "Desarrollo móvil"],
+							["", "Consultorías técnicas"],
+							["", "Web corporativa personalizada"],
+							["", "Integraciones de rastreadores"],
+							["", "Asesoramiento en la adopción de Web3"],
+							["", "Integraciones de herramientas Web3"],
+							["", "Desarrollo de protocolos Web3"],
+							["", "Desarrollo de contratos inteligentes"],
+							["", "Soluciones NFT"],
+							["", "Auditorías Web3"]
 						]
 					},
 					{
-						"title": "Products",
+						"title": "Productos",
 						"links": [
 							["", "KuduPay"],
 							["", "Wallet Kudu"]
@@ -57,9 +59,9 @@
 				]
 			},
 			"copyright": "Copyright © 2023, <span>Kudu Consultant LLC</span>",
-			"privacyPolicy": "Privacy Policy",
-			"terms": "Terms of Use",
-			"buttonCookiesManagment": "Cookie Management",
+			"privacyPolicy": "Política de privacidad",
+			"terms": "Términos de uso",
+			"buttonCookiesManagment": "Gestión de cookies",
 			"langs": [
 				["es", "Español"],
 				["en", "Inglés"]
@@ -68,39 +70,39 @@
 	},
 	"pages": {
 		"home": {
-			"title": "Desbloqueando el Potencial de las Soluciones Web3",
+			"title": "Desbloqueando el potencial de las soluciones Web3",
 			"subtitle": "Transformamos tu visión en una exitosa presencia digital. Desde la creación de sitios web hasta estrategias de marketing, te ayudamos a destacar en línea y alcanzar tus objetivos comerciales."
 		},
 		"web3": {
-			"title": "Aprovecha el Poder de la Tecnología Web3",
-			"subtitle": "Transformando Empresas con Redes Descentralizadas y Confiables."
+			"title": "Aprovecha el poder de la tecnología Web3",
+			"subtitle": "Transformando empresas con redes descentralizadas y confiables."
 		},
 		"services": {
-			"title": "Soluciones de TI a Medida para tus Necesidades Únicas",
-			"subtitle": "Ofreciendo Servicios Web3 de Vanguardia y Desarrollo Personalizado"
+			"title": "Soluciones de IT a medida para tus necesidades únicas",
+			"subtitle": "Ofreciendo servicios Web3 de vanguardia y desarrollo personalizado"
 		},
 		"about": {
-			"title": "Impulsando la Transformación Digital a través de la Experiencia",
-			"subtitle": "Un equipo enfocado y apasionado de individuos Revolucionando los Servicios de TI y las Aplicaciones Web3"
+			"title": "Impulsando la transformación digital a través de la experiencia",
+			"subtitle": "Un equipo enfocado y apasionado de individuos revolucionando los servicios de TI y las aplicaciones Web3"
 		},
 		"contact": {
-			"title": "Connect",
-			"subtitle": "We look forward to hearing from you.",
+			"title": "Conecta",
+			"subtitle": "Esperamos tener noticias tuyas.",
 			"form": {
 				"labels": {
 					"name": "Tu nombre",
 					"email": "Tu correo",
-					"subject": "Título",
+					"subject": "Asunto",
 					"message": "Mensaje"
 				},
-				"recaptchaNode": "Este sitio está protegido reCAPTCHA y la *LINK:privacy-policy*Politica de privacidad*LINK* y *LINK:terms*Terminos de servicio.*LINK* de Google.",
+				"recaptchaNode": "Este sitio está protegido por reCAPTCHA y la *LINK:privacy-policy*Política de privacidad*LINK* y *LINK:terms*Términos de servicio.*LINK* de Google.",
 				"buttonSubmit": "Contacto"
 			}
 		}
 	},
 	"emails": {
 		"contactFeedback": {
-			"subject": "[no responder]: Gracias por contactar con nosotros.",
+			"subject": "[no responder]: Gracias por contactarnos.",
 			"message": "Hemos recibido su correo, pronto nos pondremos en contacto."
 		}
 	}
