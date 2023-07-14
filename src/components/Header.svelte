@@ -63,7 +63,7 @@
 			>{locales.cta[1]}</a
 		>
 		<button
-			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square fill-neutral"
+			class="place-self-end self-center p-0.5 md:hidden btn btn-ghost btn-square child:fill-neutral child:w-8 child:h-8"
 			on:click|preventDefault={toggleMenu}><Menu /></button
 		>
 	</nav>

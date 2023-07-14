@@ -3,6 +3,7 @@
 	import { DEFAULT_LANGUAGE } from 'CONSTANTS'
 	import type { LocalesFooter } from '../types'
 	import { Github, LinkedIn, Discord, Twitter } from 'kudu-components/icons'
+	import { toggleModalCookieManagment } from 'kudu-components/modals'
 
 	export let locales: LocalesFooter
 
@@ -102,7 +103,9 @@
 			</address>
 			<ul class="md:flex md:shrink-0 md:items-center md:space-x-1 max-md:my-8 -ml-3">
 				<li>
-					<button class="md:px-1 btn-sm btn btn-link !no-underline max-md:w-fit"
+					<button
+						on:click|preventDefault={() => toggleModalCookieManagment?.()}
+						class="md:px-1 btn-sm btn btn-link !no-underline max-md:w-fit"
 						>{locales.buttonCookiesManagment}</button
 					>
 				</li>

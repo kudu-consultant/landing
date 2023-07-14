@@ -1,7 +1,7 @@
 <script lang="ts">
 	/* eslint-disable @typescript-eslint/no-explicit-any */
 	import { env } from '$env/dynamic/public'
-	import { validators } from 'utils'
+	import validators from 'kudu-utils/validators'
 	import { logger } from 'libs/logger'
 	import { CheckCircle, CrossCircle } from 'kudu-components/icons'
 	import { page } from '$app/stores'
