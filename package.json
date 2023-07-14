@@ -37,7 +37,7 @@
 	},
 	"dependencies": {
 		"@sentry/sveltekit": "7.58.1",
-		"kudu-components": "0.0.6",
+		"kudu-components": "0.0.8",
 		"kudu-ui-system": "0.1.17",
 		"kudu-utils": "^0.0.5",
 		"nodemailer": "6.9.3",
